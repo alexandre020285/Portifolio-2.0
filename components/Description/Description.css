@@ -1,0 +1,70 @@
+.description{
+    padding: 40px 4%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+/* .description .txt-description h1, p{
+    color: white;
+} */
+
+.description .txt-description h1{
+    font-size: 43px;
+    line-height: 42px;
+    color: white;
+
+}
+
+.description .txt-description p{
+    margin: 40px 0;
+    color: white;
+
+}
+
+.description .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.description .btn-contato button:hover{
+    box-shadow: 0 0 10px #00ff08;
+    transform: scale(1.1);
+}
+
+.description .btn-contato button {
+    margin: 10px;
+}
+
+.description .img-description img{
+    max-width: 500px;
+    filter: drop-shadow(0 0 8px #00ff08);
+    border-radius: 10px;
+    position: relative;
+    animation: flutuar 3s  ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+   
+    100%{
+        top: 30px;
+    }
+    
+}

@@ -1,0 +1,59 @@
+.contato{
+    padding: 80px 4%;
+    text-align: center;
+    height: 100vh;
+}
+
+.contato h2{
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    margin: 60px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+form input, form textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #242424;
+    outline: none;
+    color: white;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+}
+
+form .btn-enviar input{
+    background-color: #00ff08;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 15px 5px #00ff08;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
