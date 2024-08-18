@@ -1,11 +1,19 @@
 header{
-    padding: 20px 4%;
+    padding: 10px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #242424;
 }
 
 header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
+    
 }
 
 header a{
@@ -49,7 +57,7 @@ header .btn-contato button:hover {
 }
 
 .logo img{
-    width: 120px;
+    width: 100px;
     filter: drop-shadow(0 0 8px #00ff08);
 }
 
