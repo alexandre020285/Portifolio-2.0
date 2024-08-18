@@ -1,14 +1,13 @@
 .contato{
-    padding: 80px 4%;
+    padding: 60px 4%;
     text-align: center;
-    height: 100vh;
 }
 
 .contato h2{
     font-weight: 700;
     color: white;
     font-size: 40px;
-    margin: 60px;
+    margin: 50px;
 }
 
 form{
@@ -17,7 +16,6 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     gap: 10px;
 }
 

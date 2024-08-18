@@ -1,9 +1,45 @@
 footer{
+    position: relative;
     color: white;
-    height: 500px;
-    background-color: aquamarine;
+    height: auto;
+    padding: 25px 4%;
+    /* border-top:  2px solid #00ff08; */
+    background-color: #242424;
+}
+footer::before {  
+    content: ""; /* Necessário para o pseudo-elemento */  
+    position: absolute; /* Posiciona o pseudo-elemento */  
+    top: 0; /* Fica no topo do footer */  
+    left: 0; /* Fica alinhado à esquerda */  
+    right: 0; /* Fica alinhado à direita */  
+    height: 2px; /* Deve ser igual à altura da borda */  
+    background: #00ff08; /* Cor da borda, igual à borda superior */  
+    box-shadow: 0 0 30px 5px #00ff08; /* Sombra que você quer aplicar */  
+    z-index: -1; /* Coloca o pseudo-elemento atrás do footer */
 }
 
-.logo-footer img{
-    width: 120px;
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .logo{
+    padding-bottom: 20px;
+}
+
+.footer-mail{
+    padding: 10px 0;
+}
+
+.border{
+    border-top: 2px solid #00ff08;
+}
+
+.footer-mail i{
+   color: #00ff08;
+   font-size: 20px;
+}
+
+.footer-mail a{
+    color: white;
+    font-weight: 400;
 }
