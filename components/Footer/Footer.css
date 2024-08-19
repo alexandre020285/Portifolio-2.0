@@ -3,19 +3,19 @@ footer{
     color: white;
     height: auto;
     padding: 25px 4%;
-    /* border-top:  2px solid #00ff08; */
     background-color: #242424;
 }
+
 footer::before {  
-    content: ""; /* Necessário para o pseudo-elemento */  
-    position: absolute; /* Posiciona o pseudo-elemento */  
-    top: 0; /* Fica no topo do footer */  
-    left: 0; /* Fica alinhado à esquerda */  
-    right: 0; /* Fica alinhado à direita */  
-    height: 2px; /* Deve ser igual à altura da borda */  
-    background: #00ff08; /* Cor da borda, igual à borda superior */  
-    box-shadow: 0 0 30px 5px #00ff08; /* Sombra que você quer aplicar */  
-    z-index: -1; /* Coloca o pseudo-elemento atrás do footer */
+    content: "";   
+    position: absolute;  
+    top: 0; 
+    left: 0;   
+    right: 0; 
+    height: 2px; 
+    background: #00ff08;  
+    box-shadow: 0 0 30px 5px #00ff08;   
+    z-index: -1; 
 }
 
 footer .flex{
