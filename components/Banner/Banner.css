@@ -1,36 +1,39 @@
-.description{
+.banner{
     padding: 40px 4%;
     height: 100vh;
-    display: flex;
+    
+    
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center; */
 }
 
-.description .flex{
+.banner .flex{
     justify-content: center;
     align-items: center;
     gap: 90px;
 }
 
-/* .description .txt-description h1, p{
-    color: white;
-} */
-
-.description .txt-description h1{
+.banner .txt-banner h1{
     font-size: 43px;
     line-height: 42px;
     color: white;
-
 }
 
-.description .txt-description p{
+.banner .txt-banner p{
     margin: 40px 0;
     color: white;
-
+    text-align: justify;
 }
 
-.description .btn-contato button{
+.banner .txt-banner p span{
+    color: #00ff08;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.banner .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -41,16 +44,16 @@
     transition: 0.3s;
 }
 
-.description .btn-contato button:hover{
+.banner .btn-contato button:hover{
     box-shadow: 0 0 10px #00ff08;
     transform: scale(1.1);
 }
 
-.description .btn-contato button {
+.banner .btn-contato button {
     margin: 10px;
 }
 
-.description .img-description img{
+.banner .img-banner img{
     max-width: 500px;
     filter: drop-shadow(0 0 8px #00ff08);
     border-radius: 10px;
@@ -66,5 +69,18 @@
     100%{
         top: 30px;
     }
-    
+}
+
+
+@media screen and (max-width: 1080px) {
+    header .interface{
+        display: none;
+    }
+
+    .banner .flex{
+        flex-direction: column;
+    }
+    .banner{
+        height: 100%;
+    }
 }

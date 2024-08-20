@@ -55,3 +55,8 @@ form .btn-enviar input:hover{
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1080px) {
+    .contato{
+        padding: 30px 4%;
+    }
+}

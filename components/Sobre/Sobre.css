@@ -2,16 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
     height: 100vh;
     padding: 80px 4%;
 
 }
 
+.img-sobre{
+    width: 100%;
+    /* height: auto; */
+    text-align: center;
+}
+
 .img-sobre img{
     max-width: 450px;
     border-radius: 30px;
-    /* max-width: 500px; */
     filter: drop-shadow(0 0 8px #00ff08);
     border-radius: 10px;
     position: relative;
@@ -22,13 +26,10 @@
     0%{
         top: 0;
     }
-   
     100%{
         top: 20px;
     }
-    
 }
-
 
 .sobre .txt-sobre{
     color: white;   
@@ -37,11 +38,11 @@
 .sobre .txt-sobre h2{
     font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .sobre .flex{
     gap: 60px;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -61,22 +62,21 @@
     cursor: pointer;
 }
 
-
 .btn-social button:hover{
     transform: scale(1.1);
     transition: .3s;
     box-shadow: 0px 0px 15px 5px #00ff08;
 }
 .btn-social i{
-    /* color: white; */
-    /* align-items: center; */
     justify-content: center;
     display: flex;
     text-align: center;
 }
 
 .btn-social{
-    display: flex
+    display: flex;
+    justify-content: center
+    
 }
 
 .btn-social .btn-curriculo{
@@ -86,3 +86,15 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1080px) {
+    .sobre{
+        width: auto;
+        height: auto;
+    }
+    .img-sobre img{
+        max-width: 40%;
+    }
+    .sobre{
+        padding: 30px 4%;
+    }
+}

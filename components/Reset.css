@@ -20,3 +20,10 @@ body{
 .flex{
     display: flex;
 }
+
+@media screen and (max-width: 1080px) {
+    .flex{
+        flex-direction: column;
+        /* background-color: yellow; */
+    }
+}
