@@ -69,14 +69,12 @@
 }
 
 .banner .img-banner{
-    background-color: red;
     width: 60%;
     display: flex;
     justify-content: center;
  }
 
 dotlottie-player{
-    background-color: yellow;
     width: 100%;
 }
 
