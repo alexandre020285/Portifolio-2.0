@@ -57,8 +57,9 @@ header .btn-contato button:hover {
 }
 
 .logo img{
-    width: 100px;
+    width: 60px;
     filter: drop-shadow(0 0 8px #00ff08);
+    border-radius: 50%;
 }
 
 header .logo a{
