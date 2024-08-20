@@ -1,11 +1,9 @@
 .banner{
     padding: 40px 4%;
     height: 100vh;
-    
-    
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
 }
 
 .banner .flex{
@@ -15,9 +13,10 @@
 }
 
 .banner .txt-banner h1{
-    font-size: 43px;
+    font-size: 40px;
     line-height: 42px;
     color: white;
+    
 }
 
 .banner .txt-banner p{
@@ -53,13 +52,7 @@
     margin: 10px;
 }
 
-.banner .img-banner img{
-    max-width: 500px;
-    filter: drop-shadow(0 0 8px #00ff08);
-    border-radius: 10px;
-    position: relative;
-    animation: flutuar 3s  ease-in-out infinite alternate;
-}
+
 
 @keyframes flutuar {
     0%{
@@ -71,16 +64,50 @@
     }
 }
 
+.banner .txt-banner{
+    width: 100%;
+}
 
+.banner .img-banner{
+    background-color: red;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+ }
+
+dotlottie-player{
+    background-color: yellow;
+    width: 100%;
+}
+
+  
 @media screen and (max-width: 1080px) {
     header .interface{
         display: none;
     }
 
     .banner .flex{
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .banner{
-        height: 100%;
+        padding-bottom: 30px;
+        height: auto;
     }
+    .banner .txt-banner{
+        text-align: center;
+    }
+
+    .banner .txt-banner h1{
+        font-size: 30px;
+    }
+
+    dotlottie-player{
+        background-color: green;
+        width: 60%;
+        
+    }
+
 }

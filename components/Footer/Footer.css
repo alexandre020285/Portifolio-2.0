@@ -24,6 +24,7 @@ footer .flex{
 
 footer .logo{
     padding-bottom: 20px;
+    width: auto;
 }
 
 .footer-mail{
@@ -42,4 +43,20 @@ footer .logo{
 .footer-mail a{
     color: white;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1080px) {
+    footer .flex{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-mail{
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .logo{
+    margin-right: 50px;
+    }
 }

@@ -12,15 +12,18 @@
 
 .img-box{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 20px;
+    justify-content: center;
 }
 
 .img-port{ 
     height: 250px;
+    min-width:  350px;
     background-color: blueviolet;
     border-radius: 20px;
-    flex: 1 ;
+    display: flex;
     cursor: pointer;
     transition: 0.5s ease;
     background-size: cover;
@@ -31,11 +34,9 @@
 .img-port i{
     color: #00ff08;
     font-size: 20px;
+    max-width: 300px;
+    min-width: 350px;
 }
-
-.img-port:hover{
-    flex: 2;
-} 
 
 .descricao-projeto{
     position: absolute;
@@ -54,6 +55,7 @@
     border-radius: 20px;
     box-shadow: 0px 0px 15px 5px #00ff08;
     cursor: default;
+    transition: .5s;
 }
 
 .descricao-projeto h3{
@@ -92,14 +94,8 @@
      padding: 30px 4%;
     }
 
-    .img-box{
-        display: flex;  
-    flex-wrap: wrap;  
-    justify-content: space-between; 
-}
     .img-port{
-        flex: 0 0 48%;
         font-size: 16px;
-
     }
 }
+
