@@ -1,97 +1,95 @@
-.banner{
-    padding: 40px 4%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+section.banner {
+  padding: 30px 4%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner .flex{
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
+.banner .flex {
+  /* justify-content: center;
+    align-items: center; */
+  gap: 50px;
 }
 
-.banner .txt-banner h1{
-    font-size: 40px;
-    line-height: 42px;
-    color: white;
+.banner .txt-banner h1 {
+  font-size: 40px;
+  line-height: 42px;
+  color: white;
 }
 
-.banner .txt-banner p{
-    margin: 40px 0;
-    color: white;
-    text-align: justify;
+.banner .txt-banner p {
+  margin: 40px 0;
+  color: white;
+  text-align: justify;
 }
 
-.banner .txt-banner p span{
-    color: #00ff08;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-
-.banner .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.banner .btn-contato button:hover{
-    box-shadow: 0 0 10px #00ff08;
-    transform: scale(1.1);
+.banner .txt-banner p span {
+  color: #00ff08;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .banner .btn-contato button {
-    margin: 10px;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.banner .txt-banner{
-    width: 100%;
+.banner .btn-contato button:hover {
+  box-shadow: 0 0 10px #00ff08;
+  transform: scale(1.1);
 }
 
-.banner .img-banner{
-    width: 60%;
-    display: flex;
-    justify-content: center;
- }
-
-dotlottie-player{
-    width: 100%;
+.banner .btn-contato button {
+  margin: 10px;
 }
 
-  
+.banner .txt-banner {
+  width: 100%;
+}
+
+.banner .img-banner {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+dotlottie-player {
+  width: 100%;
+}
+
 @media screen and (max-width: 1080px) {
-    header .interface{
-        display: none;
-    }
+  section.banner {
+    height: auto;
+  }
+  .banner .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    padding-bottom: 30px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .banner .txt-banner {
+    text-align: center;
+  }
 
-    .banner .flex{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .banner{
-        padding-bottom: 30px;
-        height: auto;
-    }
-    .banner .txt-banner{
-        text-align: center;
-    }
-
-    .banner .txt-banner h1{
-        font-size: 30px;
-    }
-
-    dotlottie-player{
-        width: 60%;
-        
-    }
-
+  dotlottie-player {
+    width: 60%;
+  }
+  .banner .flex {
+    gap: 30px;
+  }
+  .banner .txt-banner h1 {
+    font-size: 30px;
+  }
 }

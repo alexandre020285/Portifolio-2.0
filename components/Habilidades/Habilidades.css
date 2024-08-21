@@ -2,8 +2,8 @@
   padding: 90px 4%;
   height: auto;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }
 
@@ -11,29 +11,29 @@
   box-shadow: 0px 0px 15px 5px #00ff08;
 }
 
-.hard-box:hover p ,
-.hard-box:hover img{
-    transform: scale(1.1);
-    transition: .5s;
-    color: #00ff08;
+.hard-box:hover p,
+.hard-box:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #00ff08;
 }
 
 .habilidades-box {
   text-align: center;
 }
 
-.habilidades-box h2{
-    margin-bottom: 10px;
+.habilidades-box h2 {
+  margin-bottom: 10px;
 }
 
-.habilidades-box h1{
-    margin: 10px;
-    font-weight: 700;
-    font-size: 35px;
+.habilidades-box h1 {
+  margin: 10px;
+  font-weight: 700;
+  font-size: 35px;
 }
 
-.hard-skills-box{
-    margin-top: 40px;
+.hard-skills-box {
+  margin-top: 40px;
 }
 
 .hard-skills {
@@ -41,9 +41,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* background-color: green; */
 }
-
 
 .hard-box {
   width: 100px;
@@ -61,78 +59,84 @@
   box-shadow: 10px 5px 5px 0px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   border: #fff 1px solid;
-  /* width: 60px; */
   cursor: pointer;
 }
 
-.hard-box :hover{
-    color: #00ff08;
+.hard-box :hover {
+  color: #00ff08;
 }
 
-.soft-skills{
-    margin: 50px;
+.soft-skills {
+  margin: 50px;
 }
 
-.soft-skills-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* background-color: yellow */
+.soft-skills-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.soft-box{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #fff;
+.soft-box {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
 
-.soft-box i{
-    /* width: 90px; */
-    font-size: 80px;
+.soft-box i {
+  font-size: 80px;
 }
 
-.soft-box h3{
-    margin: 10px;
+.soft-box h3 {
+  margin: 10px;
 }
 
-.soft-skills p{
-    margin: 20px;
+.soft-skills p {
+  margin: 20px;
 }
 
-.soft-box:hover{
-    color: #00ff08;
+.soft-box:hover {
+  color: #00ff08;
 
-    scale: 1.2;
-    animation: rotate 1s ease-in-out;
+  scale: 1.2;
+  animation: rotate 1s ease-in-out;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(-10deg);
-    }
-    75% {
-        transform: rotate(10deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media screen and (max-width: 1080px) {
-    .habilidades{
-        padding: 30px 4%;
-    }
+  .habilidades {
+    padding: 30px 4%;
+  }
+  .habilidades-box h1 {
+    font-size: 30px;
+  }
+  .hard-box {
+    width: 100px;
+    height: 100px;
+    margin: 25px 7px;
+    display: flex;
+   
+  }
 }
-    
