@@ -1,10 +1,10 @@
 header {
   padding: 10px 4%;
-  /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: #242424;
 }
 
@@ -33,7 +33,7 @@ header nav ul {
   list-style-type: none;
 }
 
-header  nav ul li {
+header .menu-desktop nav ul li {
   display: inline-block;
   padding: 0 40px;
 }
@@ -64,13 +64,15 @@ header .logo a {
   display: flex;
 }
 
-
-
-
 @media screen and (max-width: 1080px) {
   .menu-desktop,
-  .btn-contato {
+  .btn-contato,
+  .interface .logo
+   {
     display: none;
-   }
-  
-} 
+  }
+
+  header {
+    background-color: transparent;
+  }
+}

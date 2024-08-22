@@ -59,4 +59,7 @@ footer .logo {
   footer .logo {
     margin-right: 50px;
   }
+  .footer-mail a {
+    font-size: 16px;
+  }
 }
