@@ -80,6 +80,7 @@ dotlottie-player {
   .banner {
     /* padding-bottom: 30px; */
     height: auto;
+    padding: 60px 4%;
     /* margin-bottom: 30px; */
   }
   .banner .txt-banner {

@@ -19,7 +19,7 @@ footer::before {
 }
 
 footer .flex {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 footer .logo {
@@ -29,6 +29,7 @@ footer .logo {
 
 .footer-mail {
   padding: 10px 0;
+  text-align: center;
 }
 
 .border {

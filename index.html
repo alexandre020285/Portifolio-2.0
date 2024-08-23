@@ -654,37 +654,51 @@
         </div>
     </section>
 
-    <section class="contato" id="contato">
-      <div class="interface">
-        <h2>ENTRE EM CONTATO COMIGO</h2>
-
-        <form action="https://formsubmit.co/alexandre0202dev@gmail.com" method="POST">
-          <input type="text" id="nome" placeholder="Nome" required>
-          <input type="email" id="email" placeholder="Email" required>
-          <input type="text" id="tel" placeholder="Telefone (opcional)">
-          <textarea id="msg" cols="30" rows="10" placeholder="Mensagem" required></textarea>
-
-          <div class="btn-enviar">
-            <input type="submit" value="ENVIAR" target="_blank">
-          </div>
-
-          <input type="hidden" name="_Subject" value="Novo Contato😎">
-          <input type="text" name="_honey" style="display:none">
-          <input type="hidden" name="_captcha" value="false">
-
-        </form>
-      </div> <!--interface-->
-    </section>
+    <section class="contato" id="contato">  
+      <div class="interface">  
+        <h1>ENTRE EM CONTATO COMIGO</h1>  
+    
+        <form action="https://formsubmit.co/alexandre0202dev@gmail.com" method="POST">  
+          <div>  
+            <label for="nome">Nome:</label>  
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>  
+          </div>  
+          <div>  
+            <label for="email">Email:</label>  
+            <input type="email" id="email" name="email" placeholder="Email" required>  
+          </div>  
+          <div>  
+            <label for="tel">Telefone (opcional):</label>  
+            <input type="text" id="tel" name="telefone" placeholder="Telefone (opcional)">  
+          </div>  
+          <div>  
+            <label for="msg">Mensagem:</label>  
+            <textarea id="msg" name="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>  
+          </div>  
+    
+          <div class="btn-enviar">  
+            <input type="submit" value="ENVIAR">  
+          </div>  
+    
+          <input type="hidden" name="_Subject" value="Novo Contato😎">  
+          <input type="text" name="_honey" style="display:none">  
+          <input type="hidden" name="_captcha" value="false">  
+        </form>  
+      </div>   
+    </section>  
 
     <footer data-aos="fade-up" data-aos-duration="3000">
       <div class="interface">
         <div class="footer">
+
           <div class="flex">
+
             <div class="logo">
               <a href="#">
-                <img src="./src/images/AOA-DEV.jpeg" alt="leao" />
+                <img src="./src/images/AOA-DEV.jpeg" alt="aoa-dev" />
               </a>
             </div>
+
             <div class="btn-social">
               </a>
               <a href="">
@@ -698,7 +712,9 @@
                 </button>
               </a>
             </div>
+            
           </div>
+
         </div>
 
         <div class="footer-mail border">
@@ -717,7 +733,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script src="https://kit.fontawesome.com/4b67baf68e.js" crossorigin="anonymous"></script>
-  <script src="./components/Menu-mobile/menu-mobile.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

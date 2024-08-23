@@ -3,11 +3,15 @@
   text-align: center;
 }
 
-.contato h2 {
+.contato h1 {
   font-weight: 700;
   color: white;
   font-size: 40px;
   margin: 50px;
+}
+
+label{
+  display: none;
 }
 
 form {
@@ -17,17 +21,19 @@ form {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  /* background-color: #00ff08; */
 }
 
 form input,
 form textarea {
-  padding: 10px;
+  padding: 10px 5%;
   border-radius: 10px;
   border: none;
   font-size: 18px;
   background-color: #242424;
   outline: none;
   color: white;
+  width: 100%;
 }
 
 form textarea {
@@ -35,9 +41,6 @@ form textarea {
   max-height: 200px;
 }
 
-form .btn-enviar {
-  margin-top: 20px;
-}
 
 form .btn-enviar input {
   background-color: #00ff08;
@@ -48,6 +51,7 @@ form .btn-enviar input {
   border: 0;
   border-radius: 30px;
   cursor: pointer;
+  width: 150px;
 }
 
 form .btn-enviar input:hover {
@@ -58,10 +62,10 @@ form .btn-enviar input:hover {
 
 @media screen and (max-width: 1080px) {
   .contato {
-    padding: 30px 4%;
+    padding: 60px 4%;
   }
 
-  .contato h2 {
+  .contato h1 {
     font-size: 30px;
     margin: 30px;
   }
