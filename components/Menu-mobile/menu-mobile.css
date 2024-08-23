@@ -35,24 +35,23 @@
 }
 
 .logo-mobile img {
-  width: 60px;
   filter: drop-shadow(0 0 8px #00ff08);
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
   margin: 20px 4%;
-  /* animation: pulse 1.5s infinite; */
+  animation: pulse 1.5s infinite;
 }
 
-/* @keyframes pulse {
+@keyframes pulse {
   0%,
   100% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
-} */
+}
 
 .menu-mobile .btn-fechar{
   padding: 20px 5%;
