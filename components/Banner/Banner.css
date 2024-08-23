@@ -64,8 +64,11 @@ dotlottie-player {
   width: 100%;
 }
 
+
+
 @media screen and (max-width: 1080px) {
   section.banner {
+    margin-top: 60px;
     height: auto;
   }
   .banner .flex {
@@ -75,12 +78,13 @@ dotlottie-player {
     align-items: center;
   }
   .banner {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     height: auto;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
   .banner .txt-banner {
     text-align: center;
+    
   }
 
   dotlottie-player {
@@ -91,5 +95,10 @@ dotlottie-player {
   }
   .banner .txt-banner h1 {
     font-size: 30px;
+    
+  }
+
+  .banner .txt-banner p {
+    margin: 20px 0;
   }
 }

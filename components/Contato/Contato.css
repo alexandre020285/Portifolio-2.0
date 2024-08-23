@@ -60,8 +60,21 @@ form .btn-enviar input:hover {
   .contato {
     padding: 30px 4%;
   }
+
   .contato h2 {
     font-size: 30px;
     margin: 30px;
+  }
+  form{
+    gap: 5px;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 16px;
+  }
+
+  form textarea {
+    max-height: 150px;
   }
 }

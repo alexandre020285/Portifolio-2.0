@@ -49,6 +49,11 @@ footer .logo {
   footer .flex {
     flex-direction: row;
     justify-content: center;
+
+  }
+
+  footer{
+    padding: 10px ;
   }
 
   .footer-mail {
@@ -61,5 +66,8 @@ footer .logo {
   }
   .footer-mail a {
     font-size: 16px;
+  }
+  footer .logo {
+    padding-bottom: 1px;
   }
 }
