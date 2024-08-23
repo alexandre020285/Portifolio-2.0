@@ -8,12 +8,15 @@ header {
   background-color: #242424;
 }
 
-header > .interface {
+header> .interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
+  /* background-color: aquamarine; */
 }
+
+
 
 header .menu-desktop a {
   color: #fdfdfd;
@@ -21,6 +24,7 @@ header .menu-desktop a {
   display: inline-block;
   transition: 0.3s;
   padding: 10px;
+  
 }
 
 header .menu-desktop a:hover {
@@ -33,8 +37,9 @@ header nav ul {
   list-style-type: none;
 }
 
-header .menu-desktop nav ul li {
+header nav ul li {
   display: inline-block;
+  /* background-color: aquamarine; */
   padding: 0 40px;
 }
 
@@ -66,13 +71,14 @@ header .logo a {
 
 @media screen and (max-width: 1080px) {
   .menu-desktop,
-  .btn-contato,
-  .interface .logo
-   {
+  .btn-contato {
     display: none;
   }
+}
 
-  header {
-    background-color: transparent;
+@media screen and (min-width: 1080px) {
+  .open-menu-mobile {
+    display: none;
   }
+  
 }

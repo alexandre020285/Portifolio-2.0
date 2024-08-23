@@ -1,38 +1,46 @@
-header {
+/* header {
   padding-right: 0;
-}
+} */
 
-header .menu-mobile {
+.menu-mobile {
   background-color: #242424;
+  
+   /* background-color: blue; */
   height: 100vh;
   width: 0%;
   position: fixed;
   top: 0;
   right: 0;
   overflow: hidden;
+  transition: 0.2s;
+  z-index: 9;
 }
 
-header .menu-mobile {
+.menu-mobile{
   text-align: right;
 }
 
-header .menu-mobile nav ul li a {
+.menu-mobile nav ul li a {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
-  padding: 15px 4%;
-  display: block;
-  cursor: pointer; /*OBS*/
 }
 
-header .menu-mobile nav ul li a:hover {
+.menu-mobile nav ul li {
+  display: block;
+  padding: 15px 4%;
+
+}
+
+.menu-mobile nav ul li:hover,
+.menu-mobile nav ul li a:hover {
   background-color: #51b154;
   transition: 0.3s;
   font-weight: 700;
   color: black;
 }
 
-header .logo-mobile img {
+.logo-mobile img {
   width: 60px;
   filter: drop-shadow(0 0 8px #00ff08);
   border-radius: 50%;
@@ -52,9 +60,48 @@ header .logo-mobile img {
   }
 }
 
+.menu-mobile .btn-fechar{
+  padding: 20px 5%;
+  text-align: left;
+}
 .menu-mobile .btn-fechar i {
   color: #00ff08;
-  padding: 20px 5%;
   font-size: 19px;
+}
+
+.open-menu-mobile i {
+  color: #00ff08;
+  font-size: 35px;
+}
+
+.open-menu-mobile {
+  width: 100%;
+  text-align: right;
+  margin: 20px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+header .menu-mobile.active ~ .overlay-menu {  
+    display: block;
+}
+
+.menu-mobile.abrir-menu{
+  width: 60%;
+  transition: .2s;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
 }
