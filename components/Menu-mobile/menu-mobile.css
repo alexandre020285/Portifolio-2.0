@@ -41,10 +41,10 @@
   width: 80px;
   height: 80px;
   margin: 20px 4%;
-  animation: pulse 1.5s infinite;
+  /* animation: pulse 1.5s infinite; */
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
   0%,
   100% {
     transform: scale(1);
@@ -52,7 +52,7 @@
   50% {
     transform: scale(1.05);
   }
-}
+} */
 
 .menu-mobile .btn-fechar{
   padding: 20px 5%;
