@@ -7,8 +7,6 @@ section.banner {
 }
 
 .banner .flex {
-  /* justify-content: center;
-    align-items: center; */
   gap: 50px;
 }
 
@@ -65,27 +63,26 @@ dotlottie-player {
 }
 
 
-
 @media screen and (max-width: 1080px) {
   section.banner {
     margin-top: 60px;
     height: auto;
   }
+
   .banner .flex {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
+
   .banner {
-    /* padding-bottom: 30px; */
     height: auto;
     padding: 60px 4%;
-    /* margin-bottom: 30px; */
   }
+
   .banner .txt-banner {
     text-align: center;
-    
   }
 
   dotlottie-player {
@@ -94,9 +91,9 @@ dotlottie-player {
   .banner .flex {
     gap: 30px;
   }
+
   .banner .txt-banner h1 {
     font-size: 30px;
-    
   }
 
   .banner .txt-banner p {

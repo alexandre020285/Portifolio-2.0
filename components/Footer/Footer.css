@@ -50,7 +50,6 @@ footer .logo {
   footer .flex {
     flex-direction: row;
     justify-content: center;
-
   }
 
   footer{
@@ -65,9 +64,11 @@ footer .logo {
   footer .logo {
     margin-right: 50px;
   }
+
   .footer-mail a {
     font-size: 16px;
   }
+  
   footer .logo {
     padding-bottom: 1px;
   }

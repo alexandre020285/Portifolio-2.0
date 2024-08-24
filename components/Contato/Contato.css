@@ -21,7 +21,6 @@ form {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  /* background-color: #00ff08; */
 }
 
 form input,

@@ -40,18 +40,15 @@
   max-width: 80px;
   max-height: 80px;
   margin: 20px 4%;
-  animation: pulse 1.5s infinite;
+  animation: shake 1.5s infinite;
 }
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
-}
+@keyframes shake {  
+    0% { transform: translateX(0); }  
+    25% { transform: translateX(-5px); }  
+    50% { transform: translateX(5px); }  
+    75% { transform: translateX(-5px); }  
+    100% { transform: translateX(0); }  
+} 
 
 .menu-mobile .btn-fechar{
   padding: 20px 5%;

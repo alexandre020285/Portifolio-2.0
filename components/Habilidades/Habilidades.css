@@ -69,7 +69,6 @@
 
 .soft-skills {
   margin-top: 90px;
- 
 }
 
 .soft-skills-box {
@@ -105,7 +104,6 @@
 
 .soft-box:hover {
   color: #00ff08;
-
   scale: 1.2;
   animation: rotate 1s ease-in-out;
 }
@@ -132,18 +130,22 @@
   .habilidades {
     padding: 60px 4%;
   }
+  
   .habilidades-box h1 {
     font-size: 30px;
   }
+  
   .hard-box {
     width: 90px;
     height: 90px;
     margin: 25px 4px;
     display: flex;
   }
+
   .soft-box i {
     font-size: 70px;
   }
+
   .soft-box h3 {
     font-size: 20px;
   }
