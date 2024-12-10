@@ -1,0 +1,142 @@
+header {
+  padding: 10px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #242424;
+}
+
+header> .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+header .menu-desktop a {
+  color: #fdfdfd;
+  text-decoration: none;
+  display: inline-block;
+  /* transition: 0.3s; */
+  padding: 10px;
+  
+}
+
+header .menu-desktop a:hover {
+  box-shadow: 0px 0px 15px 5px #00ff08;
+  border-radius: 30px;
+  /* transition: box-shadow 0.2s ease, border-radius 0.2s ease; */
+  transition: .2s;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button {
+  width: 150px;
+  position: relative;
+  height: 45px;
+  border: 3px ridge #00ff08;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  /* padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer; */
+}
+
+header .btn-contato button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+header .btn-contato button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  transition: 0.5s;
+}
+
+header .btn-contato button:hover::before,
+header .btn-contato button:hover::after {
+  transform: scale(0);
+}
+
+
+header .btn-contato button:hover {
+  box-shadow: inset 0px 0px 25px #00ff08;
+}
+/* 
+button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+header .btn-contato button:hover {
+  box-shadow: 0px 0px 15px 5px #00ff08;
+  transition: 0.3s;
+  transform: scale(1.1);
+} */
+
+.logo img {
+  width: 60px;
+  filter: drop-shadow(0 0 8px #00ff08);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+header .logo a {
+  display: flex;
+}
+
+@media screen and (max-width: 1080px) {
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .open-menu-mobile {
+    display: none;
+  }
+  
+}

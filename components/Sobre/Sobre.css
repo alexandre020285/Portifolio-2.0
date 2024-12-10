@@ -1,0 +1,111 @@
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 80px 4%;
+}
+
+.img-sobre {
+  width: 100%;
+  text-align: center;
+}
+
+.img-sobre img {
+  max-width: 450px;
+  border-radius: 30px;
+  filter: drop-shadow(0 0 8px #00ff08);
+  border-radius: 10px;
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+.sobre .txt-sobre {
+  color: white;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.sobre .txt-sobre h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sobre .flex {
+  gap: 60px;
+  align-items: center;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.btn-social button {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn-social button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 0px 15px 5px #00ff08;
+}
+.btn-social i {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.btn-social {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-social .btn-curriculo {
+  margin-left: 20px;
+  width: 150px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1080px) {
+  .sobre {
+    width: auto;
+    height: auto;
+  }
+  .img-sobre img {
+    max-width: 40%;
+  }
+  .sobre {
+    padding: 60px 4%;
+  }
+  .btn-social .btn-curriculo {
+    margin-left: 10px;
+    width: 100px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 30px;
+  }
+}

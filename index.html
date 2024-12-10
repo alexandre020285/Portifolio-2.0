@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./components/Reset.css" />
+  <link rel="stylesheet" href="./components/Header/header.css" />
+  <link rel="stylesheet" href="./components/Banner/Banner.css" />
+  <link rel="stylesheet" href="./components/Habilidades/Habilidades.css" />
+  <link rel="stylesheet" href="./components/Sobre/Sobre.css" />
+  <link rel="stylesheet" href="./components/Portifolio/Portifolio.css">
+  <link rel="stylesheet" href="./components/Contato/Contato.css">
+  <link rel="stylesheet" href="./components/Footer/Footer.css">
+  <link rel="stylesheet" href="./components/Menu-mobile/menu-mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css"
+    integrity="sha512-BlFCHJWngPEHme4TwlEob6dPLfoNaQBTTISPwr4344nxR353w2vgGZ7GiSadbbeR20cJeeM0u1I2lAZuIZ1aOQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <title>Portifólio-2.0</title>
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="./src/images/AOA-DEV.jpeg" alt="aoa-dev" />
+        </a>
+      </div>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#banner">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#portifolio">Projetos</a></li>
+        </ul>
+      </nav>
+      <div class="btn-contato">
+        <a href="#contato">
+          <button>Contato</button>
+        </a>
+      </div>
+      <div class="open-menu-mobile" id="btn-menu">
+        <i class="fa-solid fa-list"></i>
+      </div>
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#banner">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portifolio">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="logo-mobile">
+          <img src="./src/images/AOA-DEV.jpeg" alt="aoa-dev"/>
+        </div>
+      </div>
+      <div class="overlay-menu" id="overlay-menu">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="banner">
+      <div class="interface">
+        <div class="flex">
+          <div class="txt-banner">
+            <h1>TRANSFORMANDO IDÉIAS INCRÍVEIS EM REALIDADE.</h1>
+            <p>
+              Estou aqui para trazer sua visão à vida e ajudar voçe e sua empresa a alcançar novos patamares; Com minha
+              criatividade, força de vontade e foco, eu dedicarei 100% da minha capacidade a cada projeto, garantindo
+              que suas ideias sejam transformadas em realidade.
+            </p>
+            <p>
+              Meu objetivo é trabalhar em colaboração com você, desenvolvendo soluções que atendam às suas necessidades,
+              e superem suas expectativas, alcançando novos horizontes, vamos juntos nessa jornada de inovação e
+              crescimento!
+            </p>
+            <p>
+              Pronto para transformar seu projeto em realidade? Estou à disposição para te ajudar, então não peca tempo,
+              <span>JUNTOS NESSA JORNADA</span>. 😎
+            </p>
+          </div>
+
+          <div class="img-banner">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module">
+            </script>
+            <dotlottie-player src="https://lottie.host/509276a4-9547-4cd6-a96a-f1a985083aa2/j2FFJe13BX.json"
+              background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="interface">
+        <div class="flex sobre-box">
+          <div class="img-sobre">
+            <img src="./src/images/eu.png" alt="alexandre alves" />
+          </div>
+          <div class="txt-sobre" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <h2>Oi, sou o Alexandre Alves😎</h2>
+            <h3>Desenvolvedor Full-Stack</h3>
+            <p>
+              Meu nome È ALEXANDRE, estou em transição de carreira; resolvi abraçar totalmente o que sempre gostei de
+              fazer, trabalhar com tecnologia; antes sempre trabalhei na área comercial.
+            </p>
+            <p>
+              Meu objetivo é ser DEV FULL-STACk, Há várias razões pelas quais eu quero trabalhar no desenvolvimento
+              front-end; Front-end oferece a oportunidade de combinar habilidades técnicas com criatividade para
+              produzir experiências excepcionais.
+            </p>
+            <p>
+              Possuo experiência em trabalhar em equipe, em trabalhar sob pressão, metas, resultados, tudo experiências
+              adquiridas das minhas funções anteriores, quero atuar com designers e outros desenvolvedores para criar
+              produtos de alta qualidade.
+            </p>
+            <p>
+              Estou sempre buscando aprender novas tecnologias, pois a área de DEV está sedmpre em constante evolução, o
+              que me permite continuar aprendendo e aprimorando minhas habilidades, acredito que a cada dia um mundo
+              novo de oportunidades se abre; estou em busca de novas oportunidades para aplicar meu conhecimento e
+              contribuir para o sucesso de projetos.
+            </p>
+            <div class="btn-social">
+              <a href="https://www.linkedin.com/in/alexandre-oliveira-alves/" target="_blank">
+                <button>
+                  <i class="devicon-linkedin-plain"></i>
+                </button>
+              </a>
+              <a href="https://github.com/alexandre020285" target="_blank">
+                <button>
+                  <i class="devicon-github-original"></i>
+                </button>
+              </a>
+              <div class="curriculo">
+                <a href="./src/images/alexandre de oliveira alves.pdf" target="_blank">
+                  <button class="btn-curriculo">Meu CV</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+      <div class="interface">
+        <div class="habilidades-box">
+          <h1>MINHAS HABILIDADES</h1>
+          <div>
+            <h2>HARD-SKILLS</h2>
+            <div class="hard-skills">
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/analise.png" alt="analise" />
+                </div>
+                <p>Pensamento crítico</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/liderança.png" alt="Liderança" />
+                </div>
+                <p>Liderança</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/comunicação.png" alt="comunicação" />
+                </div>
+                <p>Comunicação</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/criatividade.png" alt="Criatividade" />
+                </div>
+                <p>Criatividade</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/emocional.png" alt="Inteligencia emocional" />
+                </div>
+                <p>Inteligência emocional</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/empatia.png" alt="Empatia" />
+                </div>
+                <p>Empatia</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/equipe.png" alt="Trabalho em equipe" />
+                </div>
+                <p>Trabalho em equipe</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/etica.png" alt="Etica" />
+                </div>
+                <p>Ética</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/flexibilidade.png" alt="Flexibilidade" />
+                </div>
+                <p>Flexibilidade</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/resultados.png" alt="Resultados" />
+                </div>
+                <p>Foco em resultados</p>
+              </div>
+
+              <div class="hard-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="hard-img">
+                  <img src="./src/images/hard/sob pressão.png" alt="trabalho sobre pressão" />
+                </div>
+                <p>Trabalhar sob Pressão</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-skills">
+            <h2>SOFT-SKILLS</h2>
+            <p>(até o momento, pois estou estudando para ser FULL STACK 😎)</p>
+            <div class="soft-skills-box" data-aos="fade-up" data-aos-duration="2000">
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-javascript-plain" id="javascript"></i>
+                </div>
+                <h3>JavaScript</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i i class="devicon devicon-html5-plain-wordmark" id="html5"></i>
+                </div>
+                <h3>Html5</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+                </div>
+                <h3>CSS</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-tailwindcss-original" id="css"></i>
+                </div>
+                <h3>Tailwind</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-github-original" id="github"></i>
+                </div>
+                <h3>GitHub</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-git-plain" id="git"></i>
+                </div>
+                <h3>Git</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-jest-plain" id="jest"></i>
+                </div>
+                <h3>Jest</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-react-original" id="react"></i>
+                </div>
+                <h3>React</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-redux-original" id="react"></i>
+                </div>
+                <h3>Redux</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-typescript-plain" id="react"></i>
+                </div>
+                <h3>Typescript</h3>
+              </div>
+              <div class="soft-box">
+                <div class="logo">
+                  <i class="devicon devicon-azuresqldatabase-plain" id="react"></i>
+                </div>
+                <h3>SQL</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portifolio" id="portifolio">
+      <div class="inteface">
+        <h2 class="title">MEUS PROJETOS</h2>
+        <p>Minha evolução no mundo de programação, rumo a Full Stack.</p>
+
+        <div class="img-box">
+          <div class="img-port" style="background-image: url(./src/images/port/incial.JPG); " data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="descricao-projeto">
+              <h3>Avaliando-Filmes</h3>
+              <p> Projeto feito colocar em prática novas tecnologias aprendidas</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-typescript-plain"></i>
+                <i class="devicon-nextjs-plain"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Avaliando-Filmes" target="_blank">
+                <button>GitHub</button>
+              </a>
+              
+            </div>
+          </div>
+
+
+          <div class="img-port" style="background-image: url(./src/images/port/list.JPG); " data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="descricao-projeto">
+              <h3>PokeApi</h3>
+              <p> Projeto feito com a finalidade de aprimorar a manipulação de APIs e componentes no React</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/PokeApi" target="_blank">
+                <button>GitHub</button>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/movieslib.JPG); " data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="descricao-projeto">
+              <h3>MoviesLib</h3>
+              <p>Site de pesquisa de filmes usando a API MoviesLib </p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Api-MovieLib" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Api-MovieLib/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/desafio-react.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Desafio-React</h3>
+              <p>Desafio proposto pelo Curso</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/DesafioReact" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/DesafioReact/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/login-react.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Tela de login / React</h3>
+              <p>Tela de login de usuário, feito com a intenção de me profundar em React </p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i><i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Tela-de-login-REACT" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Tela-de-login-REACT/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/eventos-git.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Eventos GitHub</h3>
+              <p>Feito para aprimorar o uso do Fetch e APIs, Sua função seria trazer informações usuário do GitHub;</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Repositorios-e-eventos-GitHub" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Repositorios-e-eventos-GitHub/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/buscando-git.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Buscando-dados-Github</h3>
+              <p>feito para que ao informar o nome no usuário, mostrará em tela a imagem e os ultimos projetos do
+                repositório</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Buscando-dados-GITHUB" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Buscando-dados-GITHUB/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/hamburgueria.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Hamburgueria</h3>
+              <p>Projeto de hamburgueria online com conexão com whatsapp</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-tailwindcss-original"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Hamburgueria-whasapp" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Hamburgueria-whasapp" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/conselhos.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>API-Gerador-conselhos</h3>
+              <p>desenvolvido para treinar manipulação de API</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/API-gerador-de-conselhos" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/API-gerador-de-conselhos/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/rick.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>API-Rick-and-Morty</h3>
+              <p>Projeto de 1º contato com API, procurei no youtube dicas; pois algumas coisas não sabia</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/API-Rick-and-Morty" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Repositorios-e-eventos-GitHub/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/inscreva.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Formulario-Inscreva-se</h3>
+              <p> formulário, com base em um exercício que fiz do Frontend Mentor, resolvi tentar me aprofundar em mais
+                técnicas.</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Formulario-Inscreva-se" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Formulario-Inscreva-se/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/figma.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Formulario-Figma</h3>
+              <p>Desafio proposto pelo curso; para treinar e ver onde precisamos melhorar, com foco no JS.</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Formulario-Figma">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Formulario-Figma">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/hudlle.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Huddle-landing-page</h3>
+              <p>Desenvolvido com base no desafio proposto pelo Frontend Mentor </p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Huddle-landing-page" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Huddle-landing-page/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/agencia.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Landing-page-de-agencia</h3>
+              <p>Projeto para desenvolver técnicas de front-end, com base em exercícios feitos</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Landing-page-de-agencia" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Landing-page-de-agencia/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/nft.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Projeto-cartao-NFT</h3>
+              <p>Projeto feito em aula do curso</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Projeto-cartao-NFT" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Projeto-cartao-NFT/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/youtube.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Projeto-youtybe</h3>
+              <p>Desenvolvido para treinar GRID</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Projeto-youtube" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Projeto-youtube/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/padaria.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Projeto-Padaria</h3>
+              <p>Projeto de site de uma padaria com pequena vitrini de produtos</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-javascript-plain"></i>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="https://github.com/alexandre020285/Projeto-Padaria-Sabor" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Projeto-Padaria-Sabor/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-port" style="background-image: url(./src/images/port/tenis.JPG);" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="descricao-projeto">
+              <h3>Projeto-galeria-dos-Tenis</h3>
+              <p>Projeto de Site de compras online</p>
+              <p>TECNOLOGIAS USADAS</p>
+              <P>
+                <i class="devicon devicon-html5-plain-wordmark"></i>
+                <i class="devicon devicon-css3-plain-wordmark"></i>
+              </P>
+              <a href="hhttps://github.com/alexandre020285/Projeto-galeria-dos-Tenis" target="_blank">
+                <button>GitHub</button>
+              </a>
+              <a href="https://alexandre020285.github.io/Projeto-galeria-dos-Tenis/" target="_blank">
+                <button>GitHub Pages</button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="contato" id="contato">  
+      <div class="interface">  
+        <h1>ENTRE EM CONTATO COMIGO</h1>  
+    
+        <form action="https://formsubmit.co/alexandre0202dev@gmail.com" method="POST">  
+          <div>  
+            <label for="nome">Nome:</label>  
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>  
+          </div>  
+          <div>  
+            <label for="email">Email:</label>  
+            <input type="email" id="email" name="email" placeholder="Email" required>  
+          </div>  
+          <div>  
+            <label for="tel">Telefone (opcional):</label>  
+            <input type="text" id="tel" name="telefone" placeholder="Telefone (opcional)">  
+          </div>  
+          <div>  
+            <label for="msg">Mensagem:</label>  
+            <textarea id="msg" name="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>  
+          </div>  
+  
+          <div class="btn-enviar">  
+            <input type="submit" value="ENVIAR">  
+          </div>  
+    
+          <input type="hidden" name="_Subject" value="Novo Contato😎">  
+          <input type="text" name="_honey" style="display:none">  
+          <input type="hidden" name="_captcha" value="false">  
+        </form>  
+      </div>   
+    </section>  
+
+    <footer data-aos="fade-up" data-aos-duration="3000">
+      <div class="interface">
+        <div class="footer">
+          <div class="flex">
+            <div class="logo">
+              <a href="#">
+                <img src="./src/images/AOA-DEV.jpeg" alt="aoa-dev" />
+              </a>
+            </div>
+            <div class="btn-social">
+              </a>
+              <a href="">
+                <button>
+                  <i class="devicon-linkedin-plain"></i>
+                </button>
+              </a>
+              <a href="">
+                <button>
+                  <i class="devicon-github-original"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mail border">
+          <p>
+            <i class="fa-solid fa-envelope">
+              <a href="mailto:alexandre1alves@gmail.com">alexandre0202dev@gmail.com</a>
+            </i>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="https://kit.fontawesome.com/4b67baf68e.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

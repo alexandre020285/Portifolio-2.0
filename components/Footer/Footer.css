@@ -1,0 +1,75 @@
+footer {
+  position: relative;
+  color: white;
+  height: auto;
+  padding: 25px 4%;
+  background-color: #242424;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #00ff08;
+  box-shadow: 0 0 30px 5px #00ff08;
+  z-index: -1;
+}
+
+footer .flex {
+  justify-content: space-around;
+}
+
+footer .logo {
+  padding-bottom: 20px;
+  width: auto;
+}
+
+.footer-mail {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.border {
+  border-top: 2px solid #00ff08;
+}
+
+.footer-mail i {
+  color: #00ff08;
+  font-size: 20px;
+}
+
+.footer-mail a {
+  color: white;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1080px) {
+  footer .flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer{
+    padding: 10px ;
+  }
+
+  .footer-mail {
+    justify-content: center;
+    display: flex;
+  }
+
+  footer .logo {
+    margin-right: 50px;
+  }
+
+  .footer-mail a {
+    font-size: 16px;
+  }
+  
+  footer .logo {
+    padding-bottom: 1px;
+  }
+}

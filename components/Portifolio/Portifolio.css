@@ -1,0 +1,101 @@
+.portifolio {
+  height: auto;
+  padding: 80px 4%;
+  text-align: center;
+  color: #fff;
+}
+
+.portifolio h2 {
+  font-size: 40px;
+  margin: 50px;
+}
+
+.img-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.img-port {
+  height: 250px;
+  min-width: 350px;
+  border-radius: 0 30px 0 30px;
+  display: flex;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img-port i {
+  color: #00ff08;
+  font-size: 20px;
+  max-width: 300px;
+}
+
+.descricao-projeto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #222020;
+  color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s ease;
+  border-radius: 0 30px 0 30px;
+  box-shadow: 0px 0px 15px 5px #00ff08;
+  cursor: default;
+  transition: 0.5s;
+}
+
+.descricao-projeto h3 {
+  color: #00ff08;
+}
+
+.descricao-projeto i {
+  gap: 15px;
+}
+
+.descricao-projeto:hover {
+  opacity: 0.8;
+}
+
+.descricao-projeto a button {
+  padding: 5px 5px;
+  background-color: #00ff08;
+  border: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.descricao-projeto a button:hover {
+  box-shadow: 0px 0px 15px 5px #00ff08;
+  transform: scale(1.2);
+}
+
+.portifolio .interface {
+  gap: 15px;
+}
+
+@media screen and (max-width: 1080px) {
+  .portifolio {
+    padding: 60px 4%;
+  }
+  .portifolio h2{
+    margin: 5px;
+  }
+
+  .img-port {
+    font-size: 16px;
+  }
+}
