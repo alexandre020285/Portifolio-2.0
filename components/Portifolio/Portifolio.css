@@ -1,101 +1,213 @@
 .portifolio {
-  height: auto;
   padding: 80px 4%;
-  text-align: center;
-  color: #fff;
+  box-sizing: border-box;
 }
 
 .portifolio h2 {
-  font-size: 40px;
-  margin: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: #00ff08;
+  text-shadow:
+    0 0 10px rgba(0, 255, 8, 0.5),
+    0 0 20px rgba(0, 255, 8, 0.3),
+    0 0 30px rgba(0, 255, 8, 0.2);
+  animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
+
+.portifolio h2::before,
+.portifolio h2::after {
+  display: none;
+}
+
+@keyframes neonPulse {
+  from {
+    text-shadow:
+      0 0 10px rgba(0, 255, 8, 0.5),
+      0 0 20px rgba(0, 255, 8, 0.3),
+      0 0 30px rgba(0, 255, 8, 0.2);
+  }
+  to {
+    text-shadow:
+      0 0 15px rgba(0, 255, 8, 0.7),
+      0 0 25px rgba(0, 255, 8, 0.5),
+      0 0 35px rgba(0, 255, 8, 0.3);
+  }
 }
 
 .img-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-port {
-  height: 250px;
-  min-width: 350px;
-  border-radius: 0 30px 0 30px;
-  display: flex;
-  cursor: pointer;
-  transition: 0.5s ease;
+  height: 300px;
   background-size: cover;
   background-position: center;
+  border-radius: 20px;
   position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 1px solid rgba(0, 255, 8, 0.1);
+  overflow: hidden;
 }
 
-.img-port i {
-  color: #00ff08;
-  font-size: 20px;
-  max-width: 300px;
+.img-port::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(0, 255, 8, 0.05));
+  z-index: 1;
+}
+
+.img-port::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(45deg, transparent, #00ff08, transparent);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-port:hover::after {
+  opacity: 1;
 }
 
 .descricao-projeto {
   position: absolute;
-  bottom: 0;
   left: 0;
-  padding: 10px;
-  background-color: #222020;
-  color: #fff;
-  opacity: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  padding: 15px;
+  background: rgba(10, 25, 47, 0.98);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  transition: 0.5s ease;
-  border-radius: 0 30px 0 30px;
-  box-shadow: 0px 0px 15px 5px #00ff08;
-  cursor: default;
-  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+  overflow-y: auto;
+}
+
+.img-port:hover .descricao-projeto {
+  opacity: 1;
+  visibility: visible;
+}
+
+.descricao-projeto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.descricao-projeto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.descricao-projeto::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 8, 0.5);
+  border-radius: 3px;
 }
 
 .descricao-projeto h3 {
+  font-size: 18px;
   color: #00ff08;
+  margin: 10px 0;
+  text-shadow: 0 0 10px rgba(0, 255, 8, 0.5);
+}
+
+.descricao-projeto p {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .descricao-projeto i {
-  gap: 15px;
+  font-size: 22px;
+  color: #00ff08;
+  margin: 0 5px;
+  text-shadow: 0 0 10px rgba(0, 255, 8, 0.5);
 }
 
-.descricao-projeto:hover {
-  opacity: 0.8;
-}
-
-.descricao-projeto a button {
-  padding: 5px 5px;
-  background-color: #00ff08;
-  border: 0;
-  transition: 0.5s;
-  cursor: pointer;
+.descricao-projeto button {
+  background: transparent;
+  padding: 8px 20px;
+  border: 1px solid #00ff08;
   border-radius: 30px;
-  font-weight: 700;
+  color: #00ff08;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.descricao-projeto a button:hover {
-  box-shadow: 0px 0px 15px 5px #00ff08;
-  transform: scale(1.2);
+.descricao-projeto button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: #00ff08;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  opacity: 0;
+  z-index: -1;
 }
 
-.portifolio .interface {
-  gap: 15px;
+.descricao-projeto button:hover {
+  color: #0a192f;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 8, 0.3);
 }
 
-@media screen and (max-width: 1080px) {
-  .portifolio {
-    padding: 60px 4%;
-  }
-  .portifolio h2{
-    margin: 5px;
+.descricao-projeto button:hover::before {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .img-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .img-port {
-    font-size: 16px;
+    height: 250px;
+  }
+
+  .descricao-projeto {
+    padding: 15px;
   }
 }

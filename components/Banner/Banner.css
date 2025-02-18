@@ -62,11 +62,9 @@ dotlottie-player {
   width: 100%;
 }
 
-
 @media screen and (max-width: 1080px) {
   section.banner {
     margin-top: 60px;
-    height: auto;
   }
 
   .banner .flex {

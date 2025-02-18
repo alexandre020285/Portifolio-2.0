@@ -1,0 +1,97 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: #00ff08;
+  text-shadow:
+    0 0 10px rgba(0, 255, 8, 0.5),
+    0 0 20px rgba(0, 255, 8, 0.3),
+    0 0 30px rgba(0, 255, 8, 0.2);
+  animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    text-shadow:
+      0 0 10px rgba(0, 255, 8, 0.5),
+      0 0 20px rgba(0, 255, 8, 0.3),
+      0 0 30px rgba(0, 255, 8, 0.2);
+  }
+  to {
+    text-shadow:
+      0 0 15px rgba(0, 255, 8, 0.7),
+      0 0 25px rgba(0, 255, 8, 0.5),
+      0 0 35px rgba(0, 255, 8, 0.3);
+  }
+}
+
+.section-title::before,
+.section-title::after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+.futuristic-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(0, 255, 8, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.futuristic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 8, 0.1), transparent);
+  animation: shine 3s infinite;
+}
+
+.futuristic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 255, 8, 0.2);
+  border-color: rgba(0, 255, 8, 0.3);
+}
+
+@keyframes shine {
+  to {
+    left: 100%;
+  }
+}
+
+.neon-border {
+  position: relative;
+}
+
+.neon-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(45deg, transparent, #00ff08, transparent);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
