@@ -1,6 +1,5 @@
 .portifolio {
-  padding: 80px 4%;
-  box-sizing: border-box;
+  padding: var(--section-padding);
 }
 
 .portifolio h2 {
@@ -12,10 +11,10 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  color: #00ff08;
+  color: var(--primary-color);
   text-shadow:
-    0 0 10px rgba(0, 255, 8, 0.5),
-    0 0 20px rgba(0, 255, 8, 0.3),
+    0 0 10px var(--primary-shadow),
+    0 0 20px var(--primary-color-transparent),
     0 0 30px rgba(0, 255, 8, 0.2);
   animation: neonPulse 1.5s ease-in-out infinite alternate;
 }
@@ -28,15 +27,15 @@
 @keyframes neonPulse {
   from {
     text-shadow:
-      0 0 10px rgba(0, 255, 8, 0.5),
-      0 0 20px rgba(0, 255, 8, 0.3),
+      0 0 10px var(--primary-shadow),
+      0 0 20px var(--primary-color-transparent),
       0 0 30px rgba(0, 255, 8, 0.2);
   }
   to {
     text-shadow:
       0 0 15px rgba(0, 255, 8, 0.7),
-      0 0 25px rgba(0, 255, 8, 0.5),
-      0 0 35px rgba(0, 255, 8, 0.3);
+      0 0 25px var(--primary-shadow),
+      0 0 35px var(--primary-color-transparent);
   }
 }
 
@@ -45,7 +44,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 40px;
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,12 +53,13 @@
   height: 300px;
   background-size: cover;
   background-position: center;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   position: relative;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all var(--transition-slow);
   border: 1px solid rgba(0, 255, 8, 0.1);
   overflow: hidden;
+  z-index: 1;
 }
 
 .img-port::before {
@@ -68,15 +68,16 @@
   inset: 0;
   background: linear-gradient(180deg, transparent, rgba(0, 255, 8, 0.05));
   z-index: 1;
+  pointer-events: none;
 }
 
 .img-port::after {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   padding: 1px;
-  background: linear-gradient(45deg, transparent, #00ff08, transparent);
+  background: linear-gradient(45deg, transparent, var(--primary-color), transparent);
   mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -86,7 +87,8 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--transition-fast);
+  pointer-events: none;
 }
 
 .img-port:hover::after {
@@ -100,9 +102,9 @@
   width: 100%;
   height: 100%;
   padding: 15px;
-  background: rgba(10, 25, 47, 0.98);
+  background: var(--dark-bg-transparent);
   backdrop-filter: blur(5px);
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,9 +113,10 @@
   opacity: 0;
   visibility: hidden;
   transition:
-    opacity 0.4s ease,
-    visibility 0.4s ease;
+    opacity var(--transition-medium),
+    visibility var(--transition-medium);
   overflow-y: auto;
+  z-index: 10;
 }
 
 .img-port:hover .descricao-projeto {
@@ -131,19 +134,19 @@
 }
 
 .descricao-projeto::-webkit-scrollbar-thumb {
-  background: rgba(0, 255, 8, 0.5);
+  background: var(--primary-shadow);
   border-radius: 3px;
 }
 
 .descricao-projeto h3 {
   font-size: 18px;
-  color: #00ff08;
+  color: var(--primary-color);
   margin: 10px 0;
-  text-shadow: 0 0 10px rgba(0, 255, 8, 0.5);
+  text-shadow: 0 0 10px var(--primary-shadow);
 }
 
 .descricao-projeto p {
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 8px;
   font-size: 13px;
   line-height: 1.4;
@@ -151,50 +154,37 @@
 
 .descricao-projeto i {
   font-size: 22px;
-  color: #00ff08;
+  color: var(--primary-color);
   margin: 0 5px;
-  text-shadow: 0 0 10px rgba(0, 255, 8, 0.5);
+  text-shadow: 0 0 10px var(--primary-shadow);
+}
+
+.descricao-projeto a {
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  margin: 5px;
 }
 
 .descricao-projeto button {
   background: transparent;
   padding: 8px 20px;
-  border: 1px solid #00ff08;
+  border: 1px solid var(--primary-color);
   border-radius: 30px;
-  color: #00ff08;
-  font-size: 14px;
+  color: var(--primary-color);
+  font-size: 18px;
   margin-top: 15px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-fast);
   position: relative;
-  overflow: hidden;
-}
-
-.descricao-projeto button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  background: #00ff08;
-  border-radius: 50%;
-  transition: all 0.4s ease;
-  opacity: 0;
-  z-index: -1;
+  z-index: 20;
 }
 
 .descricao-projeto button:hover {
+  background: var(--primary-color);
   color: #0a192f;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 255, 8, 0.3);
-}
-
-.descricao-projeto button:hover::before {
-  width: 300px;
-  height: 300px;
-  opacity: 1;
+  box-shadow: 0 5px 15px var(--primary-color-transparent);
 }
 
 @media screen and (max-width: 768px) {
