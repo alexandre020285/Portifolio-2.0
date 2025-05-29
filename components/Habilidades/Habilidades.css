@@ -189,6 +189,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.soft-box::before {
+  display: none;
+}
+
+.soft-box::after {
+  display: none;
 }
 
 .soft-box .logo {
@@ -198,6 +208,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .soft-box .logo img {
@@ -224,6 +236,8 @@
   margin-top: 10px;
   text-align: center;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .soft-box:hover {
