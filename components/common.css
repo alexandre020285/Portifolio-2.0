@@ -52,27 +52,10 @@
   overflow: hidden;
 }
 
-.futuristic-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 8, 0.1), transparent);
-  animation: shine 3s infinite;
-}
-
 .futuristic-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px rgba(0, 255, 8, 0.2);
   border-color: rgba(0, 255, 8, 0.3);
-}
-
-@keyframes shine {
-  to {
-    left: 100%;
-  }
 }
 
 .neon-border {
