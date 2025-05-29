@@ -178,7 +178,7 @@
   margin-top: 40px;
 }
 
-.soft-box {
+.soft-skills-box .soft-box {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(0, 255, 8, 0.1);
   border-radius: 15px;
@@ -191,17 +191,15 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  box-shadow: none;
 }
 
-.soft-box::before {
+.soft-skills-box .soft-box::before,
+.soft-skills-box .soft-box::after {
   display: none;
 }
 
-.soft-box::after {
-  display: none;
-}
-
-.soft-box .logo {
+.soft-skills-box .soft-box .logo {
   width: 60px;
   height: 60px;
   margin: 0 auto 10px;
@@ -212,7 +210,7 @@
   z-index: 1;
 }
 
-.soft-box .logo img {
+.soft-skills-box .soft-box .logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -223,14 +221,15 @@
   -webkit-clip-path: none;
   shape-outside: none;
   -webkit-shape-outside: none;
+  animation: none;
 }
 
-.soft-box .logo img:hover {
+.soft-skills-box .soft-box .logo img:hover {
   transform: scale(1.1);
   filter: drop-shadow(0 0 8px rgba(0, 255, 8, 0.5));
 }
 
-.soft-box h3 {
+.soft-skills-box .soft-box h3 {
   font-size: 14px;
   color: #fff;
   margin-top: 10px;
@@ -240,7 +239,7 @@
   z-index: 1;
 }
 
-.soft-box:hover {
+.soft-skills-box .soft-box:hover {
   transform: translateY(-5px);
   background: rgba(0, 255, 8, 0.05);
   box-shadow: 0 5px 15px rgba(0, 255, 8, 0.1);
@@ -358,20 +357,26 @@
     height: 50px;
   }
 
-  .soft-box {
+  .soft-skills-box .soft-box {
     padding: 15px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(0, 255, 8, 0.1);
     border-radius: 15px;
+    box-shadow: none;
   }
 
-  .soft-box .logo {
+  .soft-skills-box .soft-box::before,
+  .soft-skills-box .soft-box::after {
+    display: none;
+  }
+
+  .soft-skills-box .soft-box .logo {
     width: 40px;
     height: 40px;
     margin: 0 auto 8px;
   }
 
-  .soft-box .logo img {
+  .soft-skills-box .soft-box .logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -382,14 +387,15 @@
     -webkit-clip-path: none;
     shape-outside: none;
     -webkit-shape-outside: none;
+    animation: none;
   }
 
-  .soft-box h3 {
+  .soft-skills-box .soft-box h3 {
     font-size: 12px;
     margin-top: 8px;
   }
 
-  .soft-box:hover {
+  .soft-skills-box .soft-box:hover {
     transform: translateY(-5px);
     background: rgba(0, 255, 8, 0.05);
     box-shadow: 0 5px 15px rgba(0, 255, 8, 0.1);
