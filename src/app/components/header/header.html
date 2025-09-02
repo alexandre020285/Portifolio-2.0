@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="AOA-logo.jpeg" alt="AOA Logo" class="logo-img" />
+      <h2>Portfólio</h2>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><button class="nav-link" (click)="scrollToSection('home')">Início</button></li>
+        <li><button class="nav-link" (click)="scrollToSection('about')">Sobre</button></li>
+        <li>
+          <button class="nav-link" (click)="scrollToSection('skills')">Habilidades</button>
+        </li>
+        <li>
+          <button class="nav-link" (click)="scrollToSection('portfolio')">Portfólio</button>
+        </li>
+        <li>
+          <button class="nav-link" (click)="scrollToSection('contact')">Contato</button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu-btn" (click)="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>

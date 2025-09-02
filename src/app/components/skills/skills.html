@@ -1,0 +1,68 @@
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title">Minhas Habilidades</h2>
+    <p class="section-subtitle">Tecnologias e ferramentas que utilizo no desenvolvimento e nas quais busco evoluir cada vez mais.</p>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of frontendSkills">
+            <div class="skill-icon">
+              <img [src]="skill.icon" [alt]="skill.name" />
+            </div>
+            <div class="skill-info">
+              <h4>{{ skill.name }}</h4>
+              <div class="skill-level">
+                <div class="progress-bar">
+                  <div class="progress" [style.width.%]="skill.level"></div>
+                </div>
+                <span class="level-text">{{ skill.level }}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of backendSkills">
+            <div class="skill-icon">
+              <img [src]="skill.icon" [alt]="skill.name" />
+            </div>
+            <div class="skill-info">
+              <h4>{{ skill.name }}</h4>
+              <div class="skill-level">
+                <div class="progress-bar">
+                  <div class="progress" [style.width.%]="skill.level"></div>
+                </div>
+                <span class="level-text">{{ skill.level }}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Ferramentas</h3>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of toolsSkills">
+            <div class="skill-icon">
+              <img [src]="skill.icon" [alt]="skill.name" />
+            </div>
+            <div class="skill-info">
+              <h4>{{ skill.name }}</h4>
+              <div class="skill-level">
+                <div class="progress-bar">
+                  <div class="progress" [style.width.%]="skill.level"></div>
+                </div>
+                <span class="level-text">{{ skill.level }}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

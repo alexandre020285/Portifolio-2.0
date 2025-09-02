@@ -1,0 +1,47 @@
+<app-header></app-header>
+
+<main>
+  <section id="home" class="main-home">
+    <div class="container">
+      <div class="main-home-content">
+        <div class="main-home-text">
+          <h1>Olá, eu sou <span class="main-home-highlight">Alexandre Alves</span></h1>
+          <p class="main-home-subtitle">
+            Sou um Desenvolvedor Full Stack Junior, meu objetivo é trabalhar em parceria com você,
+            entendendo profundamente suas necessidades e desenvolvendo soluções.
+          </p>
+
+          <p class="main-home-subtitle">
+            Estou pronto para colaborar em todas as etapas, oferecendo o suporte necessário para
+            garantir a realização de projetos desafiadores.
+          </p>
+
+          <p class="main-home-subtitle">
+            Se você está buscando um profissional comprometido com inovação e resultados concretos,
+            estou à disposição para contribuir para o crescimento e sucesso da sua empresa.
+          </p>
+          <div class="main-home-actions">
+            <button class="btn btn-primary" (click)="navigateToSection('portfolio')">
+              Ver Projetos
+            </button>
+            <button class="btn btn-secondary" (click)="navigateToSection('contact')">
+              Contato
+            </button>
+          </div>
+        </div>
+        <div class="main-home-image">
+          <div class="main-home-illustration">
+            <span>🚀</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-portfolio></app-portfolio>
+  <app-contact></app-contact>
+</main>
+
+<app-footer></app-footer>
