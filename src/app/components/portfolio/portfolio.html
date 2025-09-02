@@ -13,12 +13,25 @@
     <div class="portfolio-grid">
       <div class="portfolio-item" *ngFor="let project of filteredProjects">
         <div class="project-image">
-          <div class="project-placeholder">
-            <span>🚀</span>
-          </div>
+          <!-- Imagem principal do projeto -->
+          <img [src]="project.mainImage" [alt]="project.title" class="project-main-image" />
+
+          <!-- Overlay com links -->
           <div class="project-overlay">
             <div class="project-links">
-              <a [href]="project.liveUrl" target="_blank" class="project-link">
+              <button
+                *ngIf="project.videoUrl"
+                class="project-link"
+                (click)="openVideoModal(project.videoUrl, project.title)"
+              >
+                <span>🎥</span> Demo
+              </button>
+              <a
+                *ngIf="!project.videoUrl"
+                [href]="project.liveUrl"
+                target="_blank"
+                class="project-link"
+              >
                 <span>🌐</span> Demo
               </a>
               <a [href]="project.githubUrl" target="_blank" class="project-link">
@@ -38,3 +51,18 @@
     </div>
   </div>
 </section>
+
+<!-- Modal de Vídeo -->
+<div class="video-modal" *ngIf="showVideoModal" (click)="closeVideoModal()">
+  <div class="video-modal-content" (click)="$event.stopPropagation()">
+    <div class="video-modal-header">
+      <h3>{{ currentVideoTitle }}</h3>
+      <button class="close-btn" (click)="closeVideoModal()">×</button>
+    </div>
+    <div class="video-container">
+      <video [src]="currentVideoUrl" controls autoplay class="demo-video">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+  </div>
+</div>

@@ -9,6 +9,8 @@ interface Project {
   technologies: string[];
   liveUrl: string;
   githubUrl: string;
+  mainImage: string;
+  videoUrl?: string; // URL do vídeo de demonstração (opcional)
 }
 
 @Component({
@@ -20,17 +22,22 @@ interface Project {
 })
 export class PortfolioComponent {
   activeFilter: string = 'all';
+  showVideoModal: boolean = false;
+  currentVideoUrl: string = '';
+  currentVideoTitle: string = '';
 
   projects: Project[] = [
     {
       id: 1,
-      title: 'E-commerce Platform',
+      title: 'Gerenciador De Contatos',
       description:
-        'Plataforma completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.',
+        'Sistema completo de gerenciamento de contatos com login, cadastro e interface responsiva para desktop e mobile.',
       category: 'web',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe'],
+      technologies: ['Next.js', 'TypeScript', 'React', 'PostgreSQL', 'NestJS'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/alexandre020285/GerenciadorDeContatos',
+      mainImage: 'img/projects/contatos.jpg',
+      videoUrl: 'img/videos/contatos.mp4', // Vídeo de demonstração
     },
     {
       id: 2,
@@ -41,6 +48,8 @@ export class PortfolioComponent {
       technologies: ['React Native', 'Firebase', 'Google Maps'],
       liveUrl: '#',
       githubUrl: '#',
+      mainImage: 'img/projects/delivery.jpg',
+      videoUrl: 'videos/delivery-demo.mp4', // Vídeo de demonstração
     },
     {
       id: 3,
@@ -51,6 +60,7 @@ export class PortfolioComponent {
       technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
       liveUrl: '#',
       githubUrl: '#',
+      mainImage: 'img/projects/dashboard.jpg',
     },
     {
       id: 4,
@@ -60,6 +70,7 @@ export class PortfolioComponent {
       technologies: ['Figma', 'Storybook', 'CSS'],
       liveUrl: '#',
       githubUrl: '#',
+      mainImage: 'img/projects/design-system.jpg',
     },
   ];
 
@@ -72,5 +83,17 @@ export class PortfolioComponent {
 
   filterProjects(category: string) {
     this.activeFilter = category;
+  }
+
+  openVideoModal(videoUrl: string, title: string) {
+    this.currentVideoUrl = videoUrl;
+    this.currentVideoTitle = title;
+    this.showVideoModal = true;
+  }
+
+  closeVideoModal() {
+    this.showVideoModal = false;
+    this.currentVideoUrl = '';
+    this.currentVideoTitle = '';
   }
 }
