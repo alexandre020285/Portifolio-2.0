@@ -1,17 +1,13 @@
 <section id="portfolio" class="portfolio">
   <div class="container">
     <h2 class="section-title">Meu Portfólio</h2>
-    <p class="section-subtitle">Projetos que desenvolvi e dos quais me orgulho</p>
-
-    <div class="portfolio-filters">
-      <button class="filter-btn active" (click)="filterProjects('all')">Todos</button>
-      <button class="filter-btn" (click)="filterProjects('web')">Web</button>
-      <button class="filter-btn" (click)="filterProjects('mobile')">Mobile</button>
-      <button class="filter-btn" (click)="filterProjects('design')">Design</button>
-    </div>
+    <p class="section-subtitle">
+      Projetos mais recentes que desenvolvi ( todos os demais projetos estão disponíveis no meu
+      GitHub )
+    </p>
 
     <div class="portfolio-grid">
-      <div class="portfolio-item" *ngFor="let project of filteredProjects">
+      <div class="portfolio-item" *ngFor="let project of projects">
         <div class="project-image">
           <!-- Imagem principal do projeto -->
           <img [src]="project.mainImage" [alt]="project.title" class="project-main-image" />
@@ -26,14 +22,7 @@
               >
                 <span>🎥</span> Demo
               </button>
-              <a
-                *ngIf="!project.videoUrl"
-                [href]="project.liveUrl"
-                target="_blank"
-                class="project-link"
-              >
-                <span>🌐</span> Demo
-              </a>
+
               <a [href]="project.githubUrl" target="_blank" class="project-link">
                 <span>📚</span> Código
               </a>

@@ -5,9 +5,7 @@ interface Project {
   id: number;
   title: string;
   description: string;
-  category: string;
   technologies: string[];
-  liveUrl: string;
   githubUrl: string;
   mainImage: string;
   videoUrl?: string; // URL do vídeo de demonstração (opcional)
@@ -21,7 +19,6 @@ interface Project {
   styleUrl: './portfolio.css',
 })
 export class PortfolioComponent {
-  activeFilter: string = 'all';
   showVideoModal: boolean = false;
   currentVideoUrl: string = '';
   currentVideoTitle: string = '';
@@ -32,58 +29,50 @@ export class PortfolioComponent {
       title: 'Gerenciador De Contatos',
       description:
         'Sistema completo de gerenciamento de contatos com login, cadastro e interface responsiva para desktop e mobile.',
-      category: 'web',
-      technologies: ['Next.js', 'TypeScript', 'React', 'PostgreSQL', 'NestJS'],
-      liveUrl: '#',
+      technologies: ['Angular', 'TypeScript', 'PostgreSQL', 'Nodejs'],
       githubUrl: 'https://github.com/alexandre020285/GerenciadorDeContatos',
       mainImage: 'img/projects/contatos.jpg',
-      videoUrl: 'img/videos/contatos.mp4', // Vídeo de demonstração
+      videoUrl: 'img/videos/contatos.mp4',
     },
     {
       id: 2,
-      title: 'App de Delivery',
+      title: 'Loja Online ( e-commerce )',
       description:
-        'Aplicativo mobile para delivery de comida com geolocalização e pagamento in-app.',
-      category: 'mobile',
-      technologies: ['React Native', 'Firebase', 'Google Maps'],
-      liveUrl: '#',
-      githubUrl: '#',
-      mainImage: 'img/projects/delivery.jpg',
-      videoUrl: 'videos/delivery-demo.mp4', // Vídeo de demonstração
+        'Uma aplicação Full Stack moderna de e-commerce desenvolvida com Next.js, TypeScript e Supabase.',
+      technologies: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Nodejs'],
+      githubUrl: 'https://github.com/alexandre020285/Loja-Online',
+      mainImage: 'img/projects/loja.png',
+      videoUrl: 'img/videos/loja.mp4',
     },
     {
       id: 3,
-      title: 'Dashboard Analytics',
+      title: 'DevBurguer',
       description:
-        'Dashboard interativo para análise de dados com gráficos e relatórios em tempo real.',
-      category: 'web',
+        'Sistema de pedidos online para pequenas lojas com cardápio, carrinho de compras , Pedidos são enviados via API do WhatsApp ao estabelecimento.',
       technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
-      liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/alexandre020285/Hamburgueria-whasapp',
       mainImage: 'img/projects/dashboard.jpg',
+      videoUrl: 'img/videos/devburguer.mp4',
     },
     {
       id: 4,
-      title: 'UI/UX Design System',
+      title: 'MoviesLib',
       description: 'Sistema de design completo com componentes reutilizáveis e documentação.',
-      category: 'design',
-      technologies: ['Figma', 'Storybook', 'CSS'],
-      liveUrl: '#',
-      githubUrl: '#',
-      mainImage: 'img/projects/design-system.jpg',
+      technologies: ['React', 'Vite', 'TypeScript', 'Sass/CSS', 'Api-Rest', 'Nodejs'],
+      githubUrl: 'https://github.com/alexandre020285/Api-MovieLib',
+      mainImage: 'img/projects/movieslib.jpg',
+      videoUrl: 'img/videos/movieslib.mp4',
+    },
+    {
+      id: 5,
+      title: 'Avaliando filmes',
+      description: 'Sistema de design completo com componentes reutilizáveis e documentação.',
+      technologies: ['Next.js', 'React', 'TypeScript', 'Sass/CSS', 'Axios', 'Nodejs'],
+      githubUrl: 'https://github.com/alexandre020285/Avaliando-Filmes',
+      mainImage: 'img/projects/avaliando.JPG',
+      videoUrl: 'img/videos/avaliando.mp4',
     },
   ];
-
-  get filteredProjects(): Project[] {
-    if (this.activeFilter === 'all') {
-      return this.projects;
-    }
-    return this.projects.filter((project) => project.category === this.activeFilter);
-  }
-
-  filterProjects(category: string) {
-    this.activeFilter = category;
-  }
 
   openVideoModal(videoUrl: string, title: string) {
     this.currentVideoUrl = videoUrl;
