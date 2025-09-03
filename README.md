@@ -99,6 +99,28 @@ http://localhost:4200
 ng build --configuration production
 ```
 
+## 🌐 Deploy no GitHub Pages
+
+Este projeto está configurado para deploy automático no GitHub Pages através do GitHub Actions.
+
+### **Configuração Automática**
+
+- ✅ **Workflow configurado**: Deploy automático na branch `main`
+- ✅ **Base href configurado**: `/Portifolio-2.0/` para funcionar no GitHub Pages
+- ✅ **Arquivo .nojekyll**: Evita processamento Jekyll desnecessário
+
+### **Como Funciona**
+
+1. Faça push para a branch `main`
+2. O GitHub Actions fará o build automaticamente
+3. A aplicação será deployada em: `https://alexandre020285.github.io/Portifolio-2.0/`
+
+### **Configuração Manual (se necessário)**
+
+1. Vá em **Settings** > **Pages** no seu repositório
+2. Selecione **GitHub Actions** como fonte
+3. O workflow será executado automaticamente
+
 ## 📱 Responsividade
 
 ### **Breakpoints**
