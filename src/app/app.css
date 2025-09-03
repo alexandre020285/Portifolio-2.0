@@ -11,6 +11,13 @@ html {
   scroll-padding-top: 70px; /* Compensa a altura do header fixo */
 }
 
+/* Ajustar scroll-padding para telas menores */
+@media (max-width: 669px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+}
+
 body {
   line-height: 1.6;
   color: #333;
@@ -29,6 +36,15 @@ section {
   /* Garantir que as seções sejam visíveis */
   display: block;
   position: relative;
+}
+
+/* Ajustar seções para telas menores */
+@media (max-width: 669px) {
+  section {
+    scroll-margin-top: 60px;
+    padding-top: 60px;
+    margin-top: -60px;
+  }
 }
 
 /* Seção Main Home */
@@ -174,5 +190,27 @@ section {
     width: 250px;
     height: 250px;
     font-size: 6rem;
+  }
+}
+
+/* Correção específica para telas menores que 669px */
+@media (max-width: 669px) {
+  .main-home {
+    padding-top: 90px; /* Aumentar padding para compensar header */
+  }
+
+  .main-home .main-home-text h1 {
+    font-size: 2rem; /* Reduzir tamanho da fonte */
+    margin-top: 1rem; /* Adicionar margem superior */
+  }
+
+  .main-home .main-home-content {
+    gap: 1.5rem; /* Reduzir gap */
+  }
+
+  .main-home .main-home-illustration {
+    width: 200px; /* Reduzir tamanho da ilustração */
+    height: 200px;
+    font-size: 5rem;
   }
 }

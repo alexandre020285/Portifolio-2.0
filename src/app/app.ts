@@ -4,7 +4,7 @@ import { HeaderComponent } from './components/header/header';
 import { AboutComponent } from './components/about/about';
 import { SkillsComponent } from './components/skills/skills';
 import { PortfolioComponent } from './components/portfolio/portfolio';
-import { ContactComponent } from './components/contact/contact';
+
 import { FooterComponent } from './components/footer/footer';
 
 @Component({
@@ -16,7 +16,6 @@ import { FooterComponent } from './components/footer/footer';
     AboutComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent,
     FooterComponent,
   ],
   templateUrl: './app.html',

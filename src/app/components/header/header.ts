@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   }
 
   checkNavigationElements() {
-    const sections = ['home', 'about', 'skills', 'portfolio', 'contact'];
+    const sections = ['home', 'about', 'skills', 'portfolio'];
     sections.forEach((sectionId) => {
       const element = document.getElementById(sectionId);
       if (element) {

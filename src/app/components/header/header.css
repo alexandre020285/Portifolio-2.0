@@ -159,3 +159,28 @@
     font-size: 1.5rem;
   }
 }
+
+/* Correção para telas menores que 669px */
+@media (max-width: 669px) {
+  .header {
+    height: 60px; /* Reduzir altura do header */
+  }
+
+  .container {
+    height: 60px; /* Ajustar altura do container */
+  }
+
+  .logo-img {
+    width: 28px; /* Reduzir logo */
+    height: 28px;
+  }
+
+  .logo h2 {
+    font-size: 1.3rem; /* Reduzir texto do logo */
+  }
+
+  .nav {
+    top: 60px; /* Ajustar posição do menu mobile */
+    height: calc(100vh - 60px);
+  }
+}

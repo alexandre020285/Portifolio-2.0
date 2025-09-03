@@ -51,7 +51,7 @@ export class PortfolioComponent {
         'Sistema de pedidos online para pequenas lojas com cardápio, carrinho de compras , Pedidos são enviados via API do WhatsApp ao estabelecimento.',
       technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
       githubUrl: 'https://github.com/alexandre020285/Hamburgueria-whasapp',
-      mainImage: 'img/projects/dashboard.jpg',
+      mainImage: 'img/projects/devburguer.jpg',
       videoUrl: 'img/videos/devburguer.mp4',
     },
     {
