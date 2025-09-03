@@ -4,7 +4,6 @@ about: Suggest SEO improvements or report SEO issues
 title: ''
 labels: seo
 assignees: ''
-
 ---
 
 ## SEO Improvement
@@ -12,6 +11,7 @@ assignees: ''
 **What SEO aspect would you like to improve?**
 
 **What type of SEO issue?**
+
 - [ ] Meta tags
 - [ ] Page titles
 - [ ] URL structure
@@ -26,6 +26,7 @@ assignees: ''
 - [ ] Other (please specify)
 
 **Where is this SEO element located?**
+
 - [ ] Homepage
 - [ ] About page
 - [ ] Portfolio page
@@ -43,6 +44,7 @@ Describe what's currently implemented for this SEO aspect.
 Describe what improvement you'd like to see.
 
 **SEO tools used (if any)**
+
 - [ ] Google PageSpeed Insights
 - [ ] Google Search Console
 - [ ] Lighthouse
@@ -54,6 +56,7 @@ Describe what improvement you'd like to see.
 - [ ] Other (please specify)
 
 **Metrics or scores (if available)**
+
 - Performance: [e.g. 85/100]
 - SEO: [e.g. 90/100]
 - Accessibility: [e.g. 95/100]
@@ -63,6 +66,7 @@ Describe what improvement you'd like to see.
 What keywords should this improvement target?
 
 **Search intent**
+
 - [ ] Informational
 - [ ] Navigational
 - [ ] Transactional
@@ -74,6 +78,7 @@ What keywords should this improvement target?
 Add any other context about the SEO improvement here.
 
 **Priority level**
+
 - [ ] Critical (major SEO issue)
 - [ ] High (significant improvement)
 - [ ] Medium (moderate enhancement)
