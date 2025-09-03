@@ -8,7 +8,7 @@ interface Project {
   technologies: string[];
   githubUrl: string;
   mainImage: string;
-  videoUrl?: string; // URL do vídeo de demonstração (opcional)
+  videoUrl?: string;
 }
 
 @Component({

@@ -1,4 +1,3 @@
-/* Estilos globais essenciais */
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +7,18 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Compensa a altura do header fixo */
+  scroll-padding-top: 70px;
 }
 
-/* Ajustar scroll-padding para telas menores */
 @media (max-width: 669px) {
   html {
     scroll-padding-top: 60px;
+  }
+}
+
+@media (max-width: 455px) {
+  html {
+    scroll-padding-top: 55px;
   }
 }
 
@@ -22,23 +26,18 @@ body {
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
-  /* Garantir que o body tenha altura suficiente para scroll */
   min-height: 100vh;
 }
 
-/* Garantir que as seções sejam visíveis e tenham espaçamento adequado */
 section {
-  scroll-margin-top: 70px; /* Compensa a altura do header fixo */
-  padding-top: 70px; /* Espaçamento para o header fixo */
-  margin-top: -70px; /* Compensa o padding-top */
-  /* Garantir que cada seção tenha altura mínima */
+  scroll-margin-top: 70px;
+  padding-top: 70px;
+  margin-top: -70px;
   min-height: 100vh;
-  /* Garantir que as seções sejam visíveis */
   display: block;
   position: relative;
 }
 
-/* Ajustar seções para telas menores */
 @media (max-width: 669px) {
   section {
     scroll-margin-top: 60px;
@@ -47,7 +46,14 @@ section {
   }
 }
 
-/* Seção Main Home */
+@media (max-width: 455px) {
+  section {
+    scroll-margin-top: 55px;
+    padding-top: 55px;
+    margin-top: -55px;
+  }
+}
+
 .main-home {
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -115,10 +121,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 8rem;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   animation: float 6s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.main-home .main-home-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @keyframes float {
@@ -131,7 +144,6 @@ section {
   }
 }
 
-/* Estilos globais para botões */
 .btn {
   padding: 15px 30px;
   border: none;
@@ -166,7 +178,6 @@ section {
   transform: translateY(-3px);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .main-home .main-home-content {
     grid-template-columns: 1fr;
@@ -193,24 +204,44 @@ section {
   }
 }
 
-/* Correção específica para telas menores que 669px */
 @media (max-width: 669px) {
   .main-home {
-    padding-top: 90px; /* Aumentar padding para compensar header */
+    padding-top: 90px;
   }
 
   .main-home .main-home-text h1 {
-    font-size: 2rem; /* Reduzir tamanho da fonte */
-    margin-top: 1rem; /* Adicionar margem superior */
+    font-size: 2rem;
+    margin-top: 1rem;
   }
 
   .main-home .main-home-content {
-    gap: 1.5rem; /* Reduzir gap */
+    gap: 1.5rem;
   }
 
   .main-home .main-home-illustration {
-    width: 200px; /* Reduzir tamanho da ilustração */
+    width: 200px;
     height: 200px;
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .main-home {
+    padding-top: 100px;
+  }
+
+  .main-home .main-home-text h1 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .main-home .main-home-content {
+    gap: 1rem;
+  }
+
+  .main-home .main-home-illustration {
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
   }
 }

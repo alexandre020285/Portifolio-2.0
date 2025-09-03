@@ -10,18 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
   ngOnInit() {
-    // Verificar se todos os elementos de navegação estão presentes
     this.checkNavigationElements();
   }
 
   checkNavigationElements() {
-    const sections = ['home', 'about', 'skills', 'portfolio'];
+    const sections = ['home', 'about', 'skills', 'portfolio', 'footer'];
     sections.forEach((sectionId) => {
       const element = document.getElementById(sectionId);
-      if (element) {
-        console.log(`✅ Seção ${sectionId} encontrada:`, element);
-      } else {
-        console.warn(`⚠️ Seção ${sectionId} NÃO encontrada`);
+      if (!element) {
+        console.warn(`Seção ${sectionId} não encontrada`);
       }
     });
   }
@@ -29,41 +26,34 @@ export class HeaderComponent implements OnInit {
   toggleMobileMenu() {
     const nav = document.querySelector('.nav');
     const mobileBtn = document.querySelector('.mobile-menu-btn');
-
     nav?.classList.toggle('active');
     mobileBtn?.classList.toggle('active');
   }
 
   scrollToSection(sectionId: string) {
-    console.log('🚀 Navegando para:', sectionId);
-
-    // Primeiro, tenta encontrar o elemento pelo ID
     let element = document.getElementById(sectionId);
-
-    // Se não encontrar, tenta buscar por seletor CSS
     if (!element) {
       element = document.querySelector(`[id="${sectionId}"]`);
     }
-
-    // Se ainda não encontrar, tenta buscar por nome da seção
     if (!element) {
       element = document.querySelector(`section[id*="${sectionId}"]`);
     }
 
     if (element) {
-      console.log('✅ Elemento encontrado:', element);
+      const headerHeight = 70;
+      let elementPosition;
 
-      // Calcula a posição considerando o header fixo
-      const headerHeight = 70; // altura do header fixo
-      const elementPosition = element.offsetTop - headerHeight;
+      if (sectionId === 'footer') {
+        elementPosition = element.offsetTop - headerHeight - 20;
+      } else {
+        elementPosition = element.offsetTop - headerHeight;
+      }
 
-      // Scroll suave para a posição
       window.scrollTo({
         top: elementPosition,
         behavior: 'smooth',
       });
 
-      // Fecha o menu mobile se estiver aberto
       const nav = document.querySelector('.nav');
       const mobileBtn = document.querySelector('.mobile-menu-btn');
       if (nav?.classList.contains('active')) {
@@ -71,9 +61,6 @@ export class HeaderComponent implements OnInit {
         mobileBtn?.classList.remove('active');
       }
     } else {
-      console.error('❌ Elemento não encontrado:', sectionId);
-
-      // Fallback: scroll para o topo
       window.scrollTo({
         top: 0,
         behavior: 'smooth',

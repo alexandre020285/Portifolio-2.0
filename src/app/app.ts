@@ -4,7 +4,6 @@ import { HeaderComponent } from './components/header/header';
 import { AboutComponent } from './components/about/about';
 import { SkillsComponent } from './components/skills/skills';
 import { PortfolioComponent } from './components/portfolio/portfolio';
-
 import { FooterComponent } from './components/footer/footer';
 
 @Component({
@@ -25,7 +24,6 @@ export class AppComponent {
   title = 'Portfólio';
 
   navigateToSection(sectionId: string) {
-    console.log('🚀 Navegando para seção:', sectionId);
     this.scrollToSection(sectionId);
   }
 
@@ -34,7 +32,6 @@ export class AppComponent {
     if (element) {
       const headerHeight = 70;
       const elementPosition = element.offsetTop - headerHeight;
-
       window.scrollTo({
         top: elementPosition,
         behavior: 'smooth',

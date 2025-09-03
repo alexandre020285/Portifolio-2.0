@@ -160,27 +160,50 @@
   }
 }
 
-/* Correção para telas menores que 669px */
 @media (max-width: 669px) {
   .header {
-    height: 60px; /* Reduzir altura do header */
+    height: 60px;
   }
 
   .container {
-    height: 60px; /* Ajustar altura do container */
+    height: 60px;
   }
 
   .logo-img {
-    width: 28px; /* Reduzir logo */
+    width: 28px;
     height: 28px;
   }
 
   .logo h2 {
-    font-size: 1.3rem; /* Reduzir texto do logo */
+    font-size: 1.3rem;
   }
 
   .nav {
-    top: 60px; /* Ajustar posição do menu mobile */
+    top: 60px;
     height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 455px) {
+  .header {
+    height: 55px;
+  }
+
+  .container {
+    height: 55px;
+  }
+
+  .logo-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo h2 {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    top: 55px;
+    height: calc(100vh - 55px);
   }
 }

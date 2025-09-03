@@ -9,10 +9,8 @@
     <div class="portfolio-grid">
       <div class="portfolio-item" *ngFor="let project of projects">
         <div class="project-image">
-          <!-- Imagem principal do projeto -->
           <img [src]="project.mainImage" [alt]="project.title" class="project-main-image" />
 
-          <!-- Overlay com links -->
           <div class="project-overlay">
             <div class="project-links">
               <button
@@ -41,7 +39,6 @@
   </div>
 </section>
 
-<!-- Modal de Vídeo -->
 <div class="video-modal" *ngIf="showVideoModal" (click)="closeVideoModal()">
   <div class="video-modal-content" (click)="$event.stopPropagation()">
     <div class="video-modal-header">

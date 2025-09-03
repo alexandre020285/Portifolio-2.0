@@ -1,59 +1,165 @@
-# Portfolio
+# 🚀 Portfólio Pessoal - Alexandre Alves
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
+> **Sou um Desenvolvedor Full Stack Junior** que está sempre em busca de desafios, e eterno aprimoramento, afinal nossa área de trabalho evolui a cada dia.
 
-## Development server
+## 📋 Índice
 
-To start a local development server, run:
+- [✨ Sobre o Projeto](#-sobre-o-projeto)
+- [🎯 Funcionalidades](#-funcionalidades)
+- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [🚀 Como Executar](#-como-executar)
+- [📱 Responsividade](#-responsividade)
+- [🎨 Estrutura do Projeto](#-estrutura-do-projeto)
+- [📸 Screenshots](#-screenshots)
+- [🔗 Links](#-links)
+- [📞 Contato](#-contato)
+
+## ✨ Sobre o Projeto
+
+Este é um portfólio pessoal desenvolvido com **Angular**, apresentando meus projetos, habilidades e experiência profissional de forma elegante e responsiva.
+
+### 🌟 Destaques
+
+- **Design Moderno**: Interface limpa e profissional
+- **Totalmente Responsivo**: Funciona perfeitamente em todos os dispositivos
+- **Performance Otimizada**: Carregamento rápido e suave
+- **Navegação Intuitiva**: Menu de navegação fluido e funcional
+
+## 🎯 Funcionalidades
+
+### 📱 **Seções Principais**
+
+- **🏠 Início**: Apresentação pessoal e chamada para ação
+- **👤 Sobre**: Experiência, formação e objetivos profissionais
+- **💪 Habilidades**: Soft skills e tecnologias com níveis de proficiência
+- **📁 Portfólio**: Projetos desenvolvidos com demos em vídeo
+- **📞 Contato**: Informações de contato e redes sociais
+
+### 🎭 **Recursos Interativos**
+
+- **Navegação Suave**: Scroll automático entre seções
+- **Menu Mobile**: Navegação otimizada para dispositivos móveis
+- **Modais de Vídeo**: Visualização de demos dos projetos
+- **Animações CSS**: Efeitos visuais elegantes e suaves
+- **Bordas Animadas**: Elementos visuais em movimento
+
+## 🛠️ Tecnologias Utilizadas
+
+### **Frontend**
+
+- ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+### **Ferramentas**
+
+- ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+- ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+- ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+## 🚀 Como Executar
+
+### **Pré-requisitos**
+
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+- Angular CLI
+
+### **Passos para Execução**
+
+1. **Clone o repositório**
+
+```bash
+git clone https://github.com/seu-usuario/portfolio.git
+cd portfolio
+```
+
+2. **Instale as dependências**
+
+```bash
+npm install
+```
+
+3. **Execute o projeto**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. **Acesse no navegador**
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### **Build para Produção**
 
 ```bash
-ng generate --help
+ng build --configuration production
 ```
 
-## Building
+## 📱 Responsividade
 
-To build the project run:
+### **Breakpoints**
 
-```bash
-ng build
+- **Desktop**: > 768px - Layout completo
+- **Tablet**: ≤ 768px - Layout adaptado
+- **Mobile**: ≤ 669px - Layout compacto
+- **Mobile Pequeno**: ≤ 455px - Layout muito compacto
+
+### **Características**
+
+- ✅ Header responsivo com menu mobile
+- ✅ Grid layouts adaptativos
+- ✅ Imagens e textos otimizados
+- ✅ Navegação touch-friendly
+- ✅ Performance em todos os dispositivos
+
+## 🎨 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── header/          # Navegação principal
+│   │   ├── about/           # Seção sobre
+│   │   ├── skills/          # Habilidades e tecnologias
+│   │   ├── portfolio/       # Projetos desenvolvidos
+│   │   └── footer/          # Rodapé e contatos
+│   ├── app.html             # Template principal
+│   ├── app.css              # Estilos globais
+│   └── app.ts               # Componente raiz
+├── assets/
+│   └── img/                 # Imagens e recursos
+└── public/
+    └── img/                 # Imagens públicas
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📸 Screenshots
 
-## Running unit tests
+### **Desktop View**
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+![Desktop](screenshots/desktop.png)
 
-```bash
-ng test
-```
+### **Mobile View**
 
-## Running end-to-end tests
+![Mobile](screenshots/mobile.png)
 
-For end-to-end (e2e) testing, run:
+## 🔗 Links
 
-```bash
-ng e2e
-```
+- **🌐 Portfólio Online**: [Link do Deploy]
+- **📚 GitHub**: https://github.com/alexandre020285
+- **💼 LinkedIn**: https://www.linkedin.com/in/alexandre-oliveira-alves/
+- **📧 Email**: alexandre0202dev@gmail.com
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📞 Contato
 
-## Additional Resources
+### **Informações de Contato**
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **📧 Email**: alexandre0202dev@gmail.com
+- **📱 Telefone**: +55 (21) 99052-0213
+- **📍 Localização**: Rio de Janeiro, RJ - Brasil
+
+---
+
