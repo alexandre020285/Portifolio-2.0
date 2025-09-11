@@ -140,11 +140,11 @@ src/
 
 ### **Desktop View**
 
-![Desktop](screenshots/desktop.png)
+<img src="public/desktop.jpg" alt="Desktop" width="600">
 
 ### **Mobile View**
 
-![Mobile](screenshots/mobile.png)
+<img src="public/mobile.jpg" alt="Mobile" width="200">
 
 ## 🔗 Links
 
@@ -160,7 +160,3 @@ src/
 - **📧 Email**: alexandre0202dev@gmail.com
 - **📱 Telefone**: +55 (21) 99052-0213
 - **📍 Localização**: Rio de Janeiro, RJ - Brasil
-
--m "
----
-
