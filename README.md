@@ -130,6 +130,11 @@ src/
 │   ├── app.html             # Template principal
 │   ├── app.css              # Estilos globais
 │   └── app.ts               # Componente raiz
+<<<<<<< HEAD
+=======
+├── assets/
+│   └── img/                 # Imagens e recursos
+>>>>>>> a950a5755224a128723106ac566ffdd79b23f11a
 └── public/
     └── img/                 # Imagens públicas
 ```
