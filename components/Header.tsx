@@ -42,7 +42,7 @@ export default function Header() {
         <div className={styles.content}>
           <div className={styles.logoWrapper} onClick={() => scrollToSection('home')}>
             <motion.div whileHover={{ scale: 1.2, rotate: 360 }} whileTap={{ scale: 0.9 }} className={styles.logoImage}>
-              <Image src="/AOA-logo.jpeg" alt="AOA Logo" fill />
+              <Image src="/Portifolio-2.0/AOA-logo.jpeg" alt="AOA Logo" fill />
             </motion.div>
             <h2 className={styles.logoText}>Portfólio</h2>
           </div>
