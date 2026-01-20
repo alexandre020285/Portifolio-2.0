@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/Portifolio-2.0' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portifolio-2.0' : '',
+  basePath: isProd ? '/Portifolio-2.0' : '',
+  assetPrefix: isProd ? '/Portifolio-2.0/' : '',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -23,6 +25,9 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/Portifolio-2.0' : '',
   },
 };
 

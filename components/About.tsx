@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './About.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 export default function About() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -56,7 +58,7 @@ export default function About() {
             </motion.div>
 
             <motion.div variants={itemVariants} className={styles.actions}>
-              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/alexandre de oliveira alves.pdf" download className={`${styles.button} ${styles.buttonPrimary}`}>
+              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href={`${basePath}/alexandre de oliveira alves.pdf`} download className={`${styles.button} ${styles.buttonPrimary}`}>
                 📄 Download CV
               </motion.a>
               <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => scrollToSection('portfolio')} className={`${styles.button} ${styles.buttonSecondary}`}>

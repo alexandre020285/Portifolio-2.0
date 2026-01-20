@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import styles from './Portfolio.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 interface Project {
   id: number;
   title: string;
@@ -31,7 +33,7 @@ const projects: Project[] = [
     technologies: ['Angular', 'TypeScript', 'PostgreSQL', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/GerenciadorDeContatos',
     mainImage: '/img/projects/contatos.jpg',
-    videoUrl: 'img/videos/contatos.mp4',
+    videoUrl: `${basePath}/img/videos/contatos.mp4`,
   },
   {
     id: 3,
@@ -40,7 +42,7 @@ const projects: Project[] = [
     technologies: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/Loja-Online',
     mainImage: '/img/projects/loja.png',
-    videoUrl: 'img/videos/loja.mp4',
+    videoUrl: `${basePath}/img/videos/loja.mp4`,
   },
   {
     id: 4,
@@ -49,7 +51,7 @@ const projects: Project[] = [
     technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
     githubUrl: 'https://github.com/alexandre020285/Hamburgueria-whasapp',
     mainImage: '/img/projects/devburguer.jpg',
-    videoUrl: 'img/videos/devburguer.mp4',
+    videoUrl: `${basePath}/img/videos/devburguer.mp4`,
   },
   {
     id: 5,
@@ -58,7 +60,7 @@ const projects: Project[] = [
     technologies: ['React', 'Vite', 'TypeScript', 'Sass/CSS', 'Api-Rest', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/Api-MovieLib',
     mainImage: '/img/projects/movieslib.jpg',
-    videoUrl: 'img/videos/movieslib.mp4',
+    videoUrl: `${basePath}/img/videos/movieslib.mp4`,
   },
   {
     id: 6,
@@ -67,7 +69,7 @@ const projects: Project[] = [
     technologies: ['Next.js', 'React', 'TypeScript', 'Sass/CSS', 'Axios', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/Avaliando-Filmes',
     mainImage: '/img/projects/avaliando.JPG',
-    videoUrl: 'img/videos/avaliando.mp4',
+    videoUrl: `${basePath}/img/videos/avaliando.mp4`,
   },
 ];
 
