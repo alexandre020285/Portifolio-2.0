@@ -15,10 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portfólio - Alexandre Alves",
   description: "Desenvolvedor Full Stack Junior em busca de desafios e oportunidades",
-  icons: {
-    icon: "/AOA-logo.jpeg",
-    apple: "/AOA-logo.jpeg",
-  },
 };
 
 export default function RootLayout({
