@@ -114,6 +114,21 @@
   opacity: 1;
 }
 
+.mobileButtons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mobileButtons .overlayButton {
+  pointer-events: auto;
+}
+
 .overlayButton {
   padding: 12px 24px;
   background: #00FFFF;

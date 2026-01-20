@@ -9,25 +9,18 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Detecta quando a página é rolada
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Função para rolar até uma seção
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
-    }
+    element && window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
     setIsMobileMenuOpen(false);
   };
 
-  // Links do menu
   const navLinks = [
     { id: 'home', label: 'Início' },
     { id: 'about', label: 'Sobre' },
@@ -45,19 +38,17 @@ export default function Header() {
     >
       <div className={styles.container}>
         <div className={styles.content}>
-          {/* Logo */}
           <div className={styles.logoWrapper} onClick={() => scrollToSection('home')}>
             <motion.div
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               className={styles.logoImage}
             >
-              <Image src="/Portifolio-2.0/AOA-logo.jpeg" alt="AOA Logo" fill />
+              <Image src="/AOA-logo.jpeg" alt="AOA Logo" fill />
             </motion.div>
             <h2 className={styles.logoText}>Portfólio</h2>
           </div>
 
-          {/* Menu desktop */}
           <nav className={styles.nav}>
             {navLinks.map((link) => (
               <motion.button
@@ -73,7 +64,6 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Botão menu mobile */}
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -95,7 +85,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Menu mobile */}
       {isMobileMenuOpen && (
         <motion.nav
           initial={{ opacity: 0, height: 0 }}

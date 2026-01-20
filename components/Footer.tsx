@@ -5,15 +5,11 @@ import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
-  // Função para rolar até uma seção
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
-    }
+    element && window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
   };
 
-  // Links rápidos do menu
   const quickLinks = [
     { id: 'home', label: 'Início' },
     { id: 'about', label: 'Sobre' },
@@ -22,7 +18,6 @@ export default function Footer() {
     { id: 'contact', label: 'Contato' },
   ];
 
-  // Lista de serviços
   const services = [
     'Desenvolvimento Web',
     'Aplicativos Mobile',
@@ -33,7 +28,6 @@ export default function Footer() {
 
   return (
     <footer id="contact" className={styles.footer}>
-      {/* Fundo animado */}
       <div className={styles.backgroundWrapper}>
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
@@ -44,7 +38,6 @@ export default function Footer() {
 
       <div className={styles.container}>
         <div className={styles.footerGrid}>
-          {/* Seção principal */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +49,6 @@ export default function Footer() {
             <p className={styles.footerText}>
               Desenvolvedor Full Stack Junior em busca de desafios e oportunidades, se esta procurando um DEV que vai se dedicar a seu projeto, estou a disposição.
             </p>
-            {/* Links sociais */}
             <div className={styles.socialLinks}>
               <motion.a
                 whileHover={{ scale: 1.2 }}
@@ -89,7 +81,6 @@ export default function Footer() {
             </div>
           </motion.div>
 
-          {/* Links rápidos */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -112,7 +103,6 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Serviços */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -129,7 +119,6 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Informações de contato */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -145,7 +134,6 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        {/* Copyright */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

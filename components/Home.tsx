@@ -5,20 +5,13 @@ import Image from 'next/image';
 import styles from './Home.module.css';
 
 export default function Home() {
-  // Função simples para rolar até uma seção
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 70,
-        behavior: 'smooth',
-      });
-    }
+    element && window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
   };
 
   return (
     <section id="home" className={styles.section}>
-      {/* Fundo animado */}
       <div className={styles.backgroundWrapper}>
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
@@ -34,7 +27,6 @@ export default function Home() {
 
       <div className={styles.container}>
         <div className={styles.grid}>
-          {/* Texto principal */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -70,7 +62,6 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Imagem de perfil */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -88,7 +79,7 @@ export default function Home() {
               className={styles.rotatingBorder2}
             />
             <div className={styles.profileImage}>
-              <Image src="/Portifolio-2.0/Alexandre.jpg" alt="Alexandre Alves" fill priority />
+              <Image src="/Alexandre.jpg" alt="Alexandre Alves" fill priority />
             </div>
           </motion.div>
         </div>

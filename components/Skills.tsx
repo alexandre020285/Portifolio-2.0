@@ -4,14 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './Skills.module.css';
 
-// Tipo para habilidades
 interface Skill {
   name: string;
   icon: string;
   level: number;
 }
 
-// Lista de habilidades Frontend
 const frontendSkills: Skill[] = [
   { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', level: 95 },
   { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', level: 90 },
@@ -25,7 +23,6 @@ const frontendSkills: Skill[] = [
   { name: 'Elixir', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg', level: 55 },
 ];
 
-// Lista de habilidades Backend
 const backendSkills: Skill[] = [
   { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', level: 80 },
   { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', level: 75 },
@@ -36,7 +33,6 @@ const backendSkills: Skill[] = [
   { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', level: 75 },
 ];
 
-// Lista de ferramentas
 const toolsSkills: Skill[] = [
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', level: 80 },
   { name: 'GitHub Actions', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', level: 70 },
@@ -45,7 +41,6 @@ const toolsSkills: Skill[] = [
   { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', level: 75 },
 ];
 
-// Componente para exibir uma categoria de habilidades
 function SkillCategory({ title, skills }: { title: string; skills: Skill[] }) {
   return (
     <motion.div
@@ -68,15 +63,12 @@ function SkillCategory({ title, skills }: { title: string; skills: Skill[] }) {
             className={styles.skillItem}
           >
             <div className={styles.skillHeader}>
-              {/* Ícone da tecnologia */}
               <div className={styles.skillIcon}>
                 <Image src={skill.icon} alt={skill.name} fill />
               </div>
-              {/* Informações da habilidade */}
               <div className={styles.skillInfo}>
                 <h4 className={styles.skillName}>{skill.name}</h4>
                 <div className={styles.skillLevel}>
-                  {/* Barra de progresso */}
                   <div className={styles.progressBar}>
                     <motion.div
                       initial={{ width: 0 }}
@@ -100,7 +92,6 @@ function SkillCategory({ title, skills }: { title: string; skills: Skill[] }) {
 export default function Skills() {
   return (
     <section id="skills" className={styles.section}>
-      {/* Fundo animado */}
       <div className={styles.backgroundWrapper}>
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
@@ -110,7 +101,6 @@ export default function Skills() {
       </div>
 
       <div className={styles.container}>
-        {/* Cabeçalho da seção */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +114,6 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        {/* Grid de categorias de habilidades */}
         <div className={styles.skillsGrid}>
           <SkillCategory title="Frontend" skills={frontendSkills} />
           <SkillCategory title="Backend" skills={backendSkills} />

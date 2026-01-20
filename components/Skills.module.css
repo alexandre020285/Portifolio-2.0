@@ -32,6 +32,16 @@
   z-index: 10;
 }
 
+@media (max-width: 439px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .skillCategory {
+    padding: 16px;
+  }
+}
+
 .header {
   text-align: center;
   margin-bottom: 36px;
@@ -64,6 +74,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+@media (min-width: 440px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (min-width: 768px) {

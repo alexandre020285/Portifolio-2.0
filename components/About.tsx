@@ -5,19 +5,15 @@ import Image from 'next/image';
 import styles from './About.module.css';
 
 export default function About() {
-  // Função para rolar até uma seção
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
-    }
+    element && window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
   };
 
   return (
     <section id="about" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.grid}>
-          {/* Texto sobre mim */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +35,6 @@ export default function About() {
               Procuro novas oportunidades para aplicar meu conhecimento e contribuir para o sucesso de projetos.
             </p>
 
-            {/* Cards de informações */}
             <div className={styles.detailsGrid}>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -58,12 +53,11 @@ export default function About() {
               </motion.div>
             </div>
 
-            {/* Botões de ação */}
             <div className={styles.actions}>
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/Portifolio-2.0/alexandre de oliveira alves.pdf"
+                href="/alexandre de oliveira alves.pdf"
                 download
                 className={`${styles.button} ${styles.buttonPrimary}`}
               >
@@ -80,7 +74,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Imagem do logo */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +84,7 @@ export default function About() {
             <div className={styles.rotatingBorder} />
             <div className={styles.rotatingBorder2} />
             <div className={styles.profileImage}>
-              <Image src="/Portifolio-2.0/AOA-logo.jpeg" alt="AOA Logo" fill />
+              <Image src="/AOA-logo.jpeg" alt="AOA Logo" fill />
             </div>
           </motion.div>
         </div>
