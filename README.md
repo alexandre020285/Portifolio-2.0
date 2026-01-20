@@ -9,7 +9,7 @@
 - **React 19**
 - **TypeScript**
 - **Tailwind CSS**
-- **Framer Motion**
+- **Framer Motion**clear
 
 ## 🚀 Como Executar
 
