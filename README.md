@@ -2,21 +2,14 @@
 
 > Portfólio moderno desenvolvido com **Next.js**, **React** e **TypeScript**, com design dinâmico e animações suaves usando Framer Motion.
 
-## ✨ Características
-
-- **🎨 Design Moderno**: Interface moderna com cores Azul-marinho profundo (#01257D) e Azul elétrico (#00FFFF)
-- **✨ Animações Dinâmicas**: Animações suaves e interativas usando Framer Motion
-- **📱 Totalmente Responsivo**: Funciona perfeitamente em todos os dispositivos
-- **⚡ Performance Otimizada**: Construído com Next.js 16 para máxima performance
-- **🎯 Navegação Intuitiva**: Menu de navegação fluido e funcional
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Next.js 16**: Framework React para produção
-- **React 19**: Biblioteca JavaScript para interfaces
-- **TypeScript**: Tipagem estática para JavaScript
-- **Tailwind CSS**: Framework CSS utilitário
-- **Framer Motion**: Biblioteca de animações para React
+- **Next.js 16**
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
 
 ## 🚀 Como Executar
 
@@ -51,6 +44,35 @@ Para criar uma build de produção:
 ```bash
 npm run build
 npm start
+```
+
+## 🌐 Deploy no GitHub Pages
+
+O projeto está configurado para deploy automático no GitHub Pages através do GitHub Actions.
+
+### Configuração Automática
+
+1. **Workflow configurado**: O arquivo `.github/workflows/deploy.yml` está configurado para fazer deploy automático sempre que houver push na branch `main`.
+
+2. **Habilitar GitHub Pages**:
+   - Vá em **Settings** do repositório no GitHub
+   - Navegue até **Pages** no menu lateral
+   - Em **Source**, selecione **GitHub Actions**
+   - O deploy será feito automaticamente após cada push
+
+3. **URL do site**: Após o deploy, o site estará disponível em:
+   ```
+   https://alexandre020285.github.io/Portifolio-2.0/
+   ```
+
+### Deploy Manual
+
+Se preferir fazer deploy manual:
+
+```bash
+npm run build
+# A pasta 'out' será criada com os arquivos estáticos
+# Faça upload desta pasta para o GitHub Pages
 ```
 
 ## 📁 Estrutura do Projeto
@@ -105,6 +127,4 @@ Portifolio_3.0/
 - **LinkedIn**: [alexandre-oliveira-alves](https://www.linkedin.com/in/alexandre-oliveira-alves/)
 - **GitHub**: [alexandre020285](https://github.com/alexandre020285)
 
-## 📄 Licença
 
-Este projeto é pessoal e todos os direitos são reservados.
