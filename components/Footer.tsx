@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  // Função para rolar até uma seção
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -12,58 +13,98 @@ export default function Footer() {
     }
   };
 
-  const footerLinks = {
-    quick: [
-      { id: 'home', label: 'Início' },
-      { id: 'about', label: 'Sobre' },
-      { id: 'skills', label: 'Habilidades' },
-      { id: 'portfolio', label: 'Portfólio' },
-      { id: 'contact', label: 'Contato' },
-    ],
-    services: ['Desenvolvimento Web', 'Aplicativos Mobile', 'UI/UX Design', 'Consultoria', 'Manutenção'],
-  };
+  // Links rápidos do menu
+  const quickLinks = [
+    { id: 'home', label: 'Início' },
+    { id: 'about', label: 'Sobre' },
+    { id: 'skills', label: 'Habilidades' },
+    { id: 'portfolio', label: 'Portfólio' },
+    { id: 'contact', label: 'Contato' },
+  ];
+
+  // Lista de serviços
+  const services = [
+    'Desenvolvimento Web',
+    'Aplicativos Mobile',
+    'UI/UX Design',
+    'Consultoria',
+    'Manutenção',
+  ];
 
   return (
     <footer id="contact" className={styles.footer}>
+      {/* Fundo animado */}
       <div className={styles.backgroundWrapper}>
-        <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }} transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }} className={styles.animatedBg} />
+        <motion.div
+          animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
+          transition={{ duration: 10, repeat: Infinity }}
+          className={styles.animatedBg}
+        />
       </div>
 
       <div className={styles.container}>
         <div className={styles.footerGrid}>
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className={styles.footerSection}>
+          {/* Seção principal */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={styles.footerSection}
+          >
             <h3 className={styles.footerTitleMain}>Portfólio</h3>
-            <p className={styles.footerText}>Desenvolvedor Full Stack Junior em busca de desafios e oportunidades, se esta procurando um DEV que vai se dedicar a seu projeto, estou a disposição.</p>
+            <p className={styles.footerText}>
+              Desenvolvedor Full Stack Junior em busca de desafios e oportunidades, se esta procurando um DEV que vai se dedicar a seu projeto, estou a disposição.
+            </p>
+            {/* Links sociais */}
             <div className={styles.socialLinks}>
               <motion.a
-                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 href="https://www.linkedin.com/in/alexandre-oliveira-alves/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
               >
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" fill />
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  alt="LinkedIn"
+                  fill
+                />
               </motion.a>
               <motion.a
-                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 href="https://github.com/alexandre020285"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
               >
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" fill />
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  fill
+                />
               </motion.a>
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}>
+          {/* Links rápidos */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
             <h4 className={styles.footerTitle}>Links Rápidos</h4>
             <ul className={styles.linksList}>
-              {footerLinks.quick.map((link) => (
+              {quickLinks.map((link) => (
                 <li key={link.id}>
-                  <motion.button whileHover={{ x: 5, color: '#00FFFF' }} onClick={() => scrollToSection(link.id)} className={styles.footerLink}>
+                  <motion.button
+                    whileHover={{ x: 5 }}
+                    onClick={() => scrollToSection(link.id)}
+                    className={styles.footerLink}
+                  >
                     {link.label}
                   </motion.button>
                 </li>
@@ -71,34 +112,46 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+          {/* Serviços */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <h4 className={styles.footerTitle}>Serviços</h4>
             <ul className={styles.linksList}>
-              {footerLinks.services.map((service, index) => (
-                <motion.li key={index} whileHover={{ x: 5, color: '#00FFFF' }} className={styles.footerServiceItem}>
+              {services.map((service, index) => (
+                <li key={index} className={styles.footerServiceItem}>
                   {service}
-                </motion.li>
+                </li>
               ))}
             </ul>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }}>
+          {/* Informações de contato */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <h4 className={styles.footerTitle}>Contato</h4>
             <div className={styles.contactInfo}>
-              <motion.p whileHover={{ x: 5, color: '#00FFFF' }} className={styles.contactItem}>
-                📧 alexandre0202dev@gmail.com
-              </motion.p>
-              <motion.p whileHover={{ x: 5, color: '#00FFFF' }} className={styles.contactItem}>
-                📱 +55 (21) 99052-0213
-              </motion.p>
-              <motion.p whileHover={{ x: 5, color: '#00FFFF' }} className={styles.contactItem}>
-                📍 Rio de Janeiro, RJ - Brasil
-              </motion.p>
+              <p className={styles.contactItem}>📧 alexandre0202dev@gmail.com</p>
+              <p className={styles.contactItem}>📱 +55 (21) 99052-0213</p>
+              <p className={styles.contactItem}>📍 Rio de Janeiro, RJ - Brasil</p>
             </div>
           </motion.div>
         </div>
 
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className={styles.copyright}>
+        {/* Copyright */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className={styles.copyright}
+        >
           <p>© {new Date().getFullYear()} Alexandre Alves. Todos os direitos reservados.</p>
         </motion.div>
       </div>

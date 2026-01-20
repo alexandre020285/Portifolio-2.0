@@ -4,12 +4,14 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './Skills.module.css';
 
+// Tipo para habilidades
 interface Skill {
   name: string;
   icon: string;
   level: number;
 }
 
+// Lista de habilidades Frontend
 const frontendSkills: Skill[] = [
   { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', level: 95 },
   { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', level: 90 },
@@ -23,6 +25,7 @@ const frontendSkills: Skill[] = [
   { name: 'Elixir', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg', level: 55 },
 ];
 
+// Lista de habilidades Backend
 const backendSkills: Skill[] = [
   { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', level: 80 },
   { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', level: 75 },
@@ -33,6 +36,7 @@ const backendSkills: Skill[] = [
   { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', level: 75 },
 ];
 
+// Lista de ferramentas
 const toolsSkills: Skill[] = [
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', level: 80 },
   { name: 'GitHub Actions', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', level: 70 },
@@ -41,34 +45,44 @@ const toolsSkills: Skill[] = [
   { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', level: 75 },
 ];
 
-const SkillCategory = ({ title, skills, delay }: { title: string; skills: Skill[]; delay: number }) => {
+// Componente para exibir uma categoria de habilidades
+function SkillCategory({ title, skills }: { title: string; skills: Skill[] }) {
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay }} className={styles.skillCategory}>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className={styles.skillCategory}
+    >
       <h3 className={styles.categoryTitle}>{title}</h3>
       <div className={styles.skillsList}>
-        {skills.map((skill, index) => (
+        {skills.map((skill) => (
           <motion.div
             key={skill.name}
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: delay + index * 0.1 }}
+            transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.02 }}
             className={styles.skillItem}
           >
             <div className={styles.skillHeader}>
+              {/* Ícone da tecnologia */}
               <div className={styles.skillIcon}>
                 <Image src={skill.icon} alt={skill.name} fill />
               </div>
+              {/* Informações da habilidade */}
               <div className={styles.skillInfo}>
                 <h4 className={styles.skillName}>{skill.name}</h4>
                 <div className={styles.skillLevel}>
+                  {/* Barra de progresso */}
                   <div className={styles.progressBar}>
                     <motion.div
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
-                      transition={{ duration: 1, delay: delay + index * 0.1, ease: 'easeOut' }}
+                      transition={{ duration: 1, ease: 'easeOut' }}
                       className={styles.progress}
                     />
                   </div>
@@ -81,25 +95,40 @@ const SkillCategory = ({ title, skills, delay }: { title: string; skills: Skill[
       </div>
     </motion.div>
   );
-};
+}
 
 export default function Skills() {
   return (
     <section id="skills" className={styles.section}>
+      {/* Fundo animado */}
       <div className={styles.backgroundWrapper}>
-        <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }} transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }} className={styles.animatedBg} />
+        <motion.div
+          animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
+          transition={{ duration: 8, repeat: Infinity }}
+          className={styles.animatedBg}
+        />
       </div>
 
       <div className={styles.container}>
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className={styles.header}>
+        {/* Cabeçalho da seção */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className={styles.header}
+        >
           <h2 className={styles.title}>Minhas Habilidades</h2>
-          <p className={styles.subtitle}>Tecnologias e ferramentas que utilizo no desenvolvimento e nas quais busco evoluir cada vez mais.</p>
+          <p className={styles.subtitle}>
+            Tecnologias e ferramentas que utilizo no desenvolvimento e nas quais busco evoluir cada vez mais.
+          </p>
         </motion.div>
 
+        {/* Grid de categorias de habilidades */}
         <div className={styles.skillsGrid}>
-          <SkillCategory title="Frontend" skills={frontendSkills} delay={0.1} />
-          <SkillCategory title="Backend" skills={backendSkills} delay={0.2} />
-          <SkillCategory title="Ferramentas" skills={toolsSkills} delay={0.3} />
+          <SkillCategory title="Frontend" skills={frontendSkills} />
+          <SkillCategory title="Backend" skills={backendSkills} />
+          <SkillCategory title="Ferramentas" skills={toolsSkills} />
         </div>
       </div>
     </section>
