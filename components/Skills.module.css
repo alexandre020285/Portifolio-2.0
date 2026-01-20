@@ -114,7 +114,6 @@
 }
 
 .skillItem:hover {
-  transform: translateX(3px);
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(0, 255, 255, 0.2);
 }

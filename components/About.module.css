@@ -82,7 +82,6 @@
 }
 
 .detailCard:hover {
-  transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(1, 37, 125, 0.3);
   border-color: rgba(0, 255, 255, 0.3);
 }
@@ -131,11 +130,6 @@
 
 .buttonPrimary:hover {
   box-shadow: 0 8px 25px rgba(0, 255, 255, 0.5);
-  transform: translateY(-2px);
-}
-
-.buttonPrimary:active {
-  transform: translateY(0);
 }
 
 .buttonSecondary {
@@ -147,12 +141,7 @@
 .buttonSecondary:hover {
   background: #01257D;
   color: #ffffff;
-  transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(1, 37, 125, 0.3);
-}
-
-.buttonSecondary:active {
-  transform: translateY(0);
 }
 
 .imageWrapper {

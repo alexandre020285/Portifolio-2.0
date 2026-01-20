@@ -118,11 +118,6 @@
 
 .button:hover {
   box-shadow: 0 8px 25px rgba(0, 255, 255, 0.5);
-  transform: translateY(-2px);
-}
-
-.button:active {
-  transform: translateY(0);
 }
 
 .imageWrapper {
@@ -138,7 +133,6 @@
   inset: -20px;
   border: 3px solid rgba(0, 255, 255, 0.2);
   border-radius: 50%;
-  animation: rotate 20s linear infinite;
 }
 
 .rotatingBorder2 {
@@ -146,17 +140,6 @@
   inset: -10px;
   border: 3px solid rgba(0, 255, 255, 0.15);
   border-radius: 50%;
-  animation: rotateReverse 15s linear infinite;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes rotateReverse {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
 }
 
 .profileImage {

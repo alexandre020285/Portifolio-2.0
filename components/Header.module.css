@@ -32,15 +32,6 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.logoWrapper:hover {
-  transform: scale(1.05);
-}
-
-.logoWrapper:active {
-  transform: scale(0.98);
 }
 
 .logoImage {
