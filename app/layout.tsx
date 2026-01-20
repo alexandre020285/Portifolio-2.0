@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "Portfólio - Alexandre Alves",
   description: "Desenvolvedor Full Stack Junior em busca de desafios e oportunidades",
   icons: {
-    icon: '/AOA-logo.jpeg',
-    apple: '/AOA-logo.jpeg',
+    icon: "/Portifolio-2.0/AOA-logo.jpeg",
+    apple: "/Portifolio-2.0/AOA-logo.jpeg",
   },
 };
 
