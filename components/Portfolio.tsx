@@ -25,6 +25,7 @@ const projects: Project[] = [
     technologies: ['Next.js', 'React', 'TypeScript', 'React Icons'],
     githubUrl: 'https://github.com/alexandre020285/TesteLionsSeminovos',
     mainImage: '/Portifolio-2.0/img/projects/lions.png',
+    videoUrl: '/Portifolio-2.0/img/videos/LiosnSeminovos.mp4',
   },
   {
     id: 2,
