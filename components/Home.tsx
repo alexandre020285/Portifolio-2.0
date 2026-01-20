@@ -79,7 +79,7 @@ export default function Home() {
               className={styles.rotatingBorder2}
             />
             <div className={styles.profileImage}>
-              <Image src="/Alexandre.jpg" alt="Alexandre Alves" fill priority />
+              <Image src="/Portifolio-2.0/Alexandre.jpg" alt="Alexandre Alves" fill priority />
             </div>
           </motion.div>
         </div>

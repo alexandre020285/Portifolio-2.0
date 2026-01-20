@@ -57,7 +57,7 @@ export default function About() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/alexandre de oliveira alves.pdf"
+                href="/Portifolio-2.0/alexandre de oliveira alves.pdf"
                 download
                 className={`${styles.button} ${styles.buttonPrimary}`}
               >
@@ -84,7 +84,7 @@ export default function About() {
             <div className={styles.rotatingBorder} />
             <div className={styles.rotatingBorder2} />
             <div className={styles.profileImage}>
-              <Image src="/AOA-logo.jpeg" alt="AOA Logo" fill />
+              <Image src="/Portifolio-2.0/AOA-logo.jpeg" alt="AOA Logo" fill />
             </div>
           </motion.div>
         </div>

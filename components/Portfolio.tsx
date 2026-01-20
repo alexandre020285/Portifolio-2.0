@@ -22,8 +22,8 @@ const projects: Project[] = [
     description: 'Teste prático criando um site de venda de carros.',
     technologies: ['Next.js', 'React', 'TypeScript', 'React Icons'],
     githubUrl: 'https://github.com/alexandre020285/TesteLionsSeminovos',
-    mainImage: '/img/projects/lions.png',
-    videoUrl: '/img/videos/LiosnSeminovos.mp4',
+    mainImage: '/Portifolio-2.0/img/projects/lions.png',
+    videoUrl: '/Portifolio-2.0/img/videos/LiosnSeminovos.mp4',
   },
   {
     id: 2,
@@ -31,8 +31,8 @@ const projects: Project[] = [
     description: 'Sistema completo de gerenciamento de contatos com login, cadastro e interface responsiva para desktop e mobile.',
     technologies: ['Angular', 'TypeScript', 'PostgreSQL', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/GerenciadorDeContatos',
-    mainImage: '/img/projects/contatos.jpg',
-    videoUrl: '/img/videos/contatos.mp4',
+    mainImage: '/Portifolio-2.0/img/projects/contatos.jpg',
+    videoUrl: '/Portifolio-2.0/img/videos/contatos.mp4',
   },
   {
     id: 3,
@@ -40,8 +40,8 @@ const projects: Project[] = [
     description: 'Uma aplicação Full Stack moderna de e-commerce desenvolvida com Next.js, TypeScript e Supabase.',
     technologies: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/Loja-Online',
-    mainImage: '/img/projects/loja.png',
-    videoUrl: '/img/videos/loja.mp4',
+    mainImage: '/Portifolio-2.0/img/projects/loja.png',
+    videoUrl: '/Portifolio-2.0/img/videos/loja.mp4',
   },
   {
     id: 4,
@@ -49,8 +49,8 @@ const projects: Project[] = [
     description: 'Sistema de pedidos online para pequenas lojas com cardápio, carrinho de compras , Pedidos são enviados via API do WhatsApp ao estabelecimento.',
     technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
     githubUrl: 'https://github.com/alexandre020285/Hamburgueria-whasapp',
-    mainImage: '/img/projects/devburguer.jpg',
-    videoUrl: '/img/videos/devburguer.mp4',
+    mainImage: '/Portifolio-2.0/img/projects/devburguer.jpg',
+    videoUrl: '/Portifolio-2.0/img/videos/devburguer.mp4',
   },
   {
     id: 5,
@@ -58,8 +58,8 @@ const projects: Project[] = [
     description: 'Sistema de design completo com componentes reutilizáveis e documentação.',
     technologies: ['React', 'Vite', 'TypeScript', 'Sass/CSS', 'Api-Rest', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/Api-MovieLib',
-    mainImage: '/img/projects/movieslib.jpg',
-    videoUrl: '/img/videos/movieslib.mp4',
+    mainImage: '/Portifolio-2.0/img/projects/movieslib.jpg',
+    videoUrl: '/Portifolio-2.0/img/videos/movieslib.mp4',
   },
   {
     id: 6,
@@ -67,8 +67,8 @@ const projects: Project[] = [
     description: 'Sistema de design completo com componentes reutilizáveis e documentação.',
     technologies: ['Next.js', 'React', 'TypeScript', 'Sass/CSS', 'Axios', 'Nodejs'],
     githubUrl: 'https://github.com/alexandre020285/Avaliando-Filmes',
-    mainImage: '/img/projects/avaliando.JPG',
-    videoUrl: '/img/videos/avaliando.mp4',
+    mainImage: '/Portifolio-2.0/img/projects/avaliando.JPG',
+    videoUrl: '/Portifolio-2.0/img/videos/avaliando.mp4',
   },
 ];
 
